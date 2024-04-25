@@ -7,4 +7,105 @@
     --cor4: #8C4E37;
     --cor5: #592925;
 }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a58365, #403e2260, #dde088f1);
+    background-size: cover;
+}
+
+.proj{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 75vh;
+    justify-items: center;
+    grid-template-areas:
+    "portfolio login";
+}
+.proj2{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 75vh;
+    margin-top:20px;
+    justify-items: center;
+    grid-template-areas:
+    "rede-social cordel-moderno android";
+}
+
+.proj > ul {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    color: #050505;
+    font: bolder 1em "Nunito";
+
+}
+
+.proj2 > ul {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    color: #050505;
+    font: bolder 1em "Nunito";
+ 
+}
+
+.proj , .proj2> ul > li {
+    display:flex;
+    justify-content: space-evenly;
+    color: #050505;
+    font: bolder 1.2em "Nunito";
+    padding: 3%;
+}
+
+.proj , .proj2> ul > li > h1{
+    display: grid;
+    grid-area:h1;
+    font: bolder 1em "Nunito";
+    text-align: center;
+  
+}
+
+.botoes{
+    display: grid;
+    grid-area:botoes;
+    text-align: center;
+}
+
+.botoes>ul>li>h1{
+  font:bolder 0.8em "Nunito";
+}
+
+.proj>section>.portfolio{
+    display: grid;
+    grid-area: portfolio;
+}
+
+.proj>section>.login{
+    display: grid;
+    grid-area: login;
+}
+
+.proj2>section>.rede-social{
+    display: grid;
+    grid-area:rede-social;
+}
+
+.proj2>section>.cordel-moderno{
+    display: grid;
+    grid-area:cordel-moderno;
+}
+
+.proj2>section>.android{
+    display: grid;
+    grid-area:android;
+}
+
 
