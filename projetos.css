@@ -1,11 +1,21 @@
 @charset "utf-8";
 
 :root {
-    --cor1: #dde088f1;
-    --cor2: #403e2260;
-    --cor3: #BF8F65;
-    --cor4: #8C4E37;
-    --cor5: #592925;
+
+cor0: #F2D0DD; 
+cor1: #ee0b62; 
+
+cor2: #CCB8D9; 
+cor3: #8700e0; 
+
+cor4: #C4F2DD; 
+cor5: #08d378; 
+
+cor6: #F2E3B3; 
+cor7: #dfaf12; 
+
+cor8: #F2D0BD; 
+cor9: #e66216; 
 }
 * {
     margin: 0;
@@ -17,23 +27,26 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, #a58365, #403e2260, #dde088f1);
+    background-image: linear-gradient(to top, #F2D0DD,#CCB8D9,#C4F2DD,#F2E3B3,#F2D0BD);
     background-size: cover;
 }
 
 .proj{
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 75vh;
+    grid-template-rows: 120vh;
     justify-items: center;
+    margin-top: 10vh ;
+    margin-bottom: 20vh;
     grid-template-areas:
     "portfolio login";
 }
 .proj2{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 75vh;
-    margin-top:20px;
+    margin-top: 20vh ;
+    margin-bottom: 20vh;
+    grid-auto-rows: 120vh;
     justify-items: center;
     grid-template-areas:
     "rede-social cordel-moderno android";
@@ -45,7 +58,6 @@ body {
     align-content: center;
     color: #050505;
     font: bolder 1em "Nunito";
-
 }
 
 .proj2 > ul {
@@ -57,35 +69,41 @@ body {
  
 }
 
-.proj , .proj2> ul > li {
+.proj,.proj2> ul > li {
     display:flex;
     justify-content: space-evenly;
     color: #050505;
     font: bolder 1.2em "Nunito";
     padding: 3%;
+    margin: 3px;
 }
 
-.proj , .proj2> ul > li > h1{
+h2{
     display: grid;
-    grid-area:h1;
     font: bolder 1em "Nunito";
     text-align: center;
+    background-color: #58f1c3;
+}
+.fport,.flogin,.fsocial,.fcordel,.fandroid{
+    height:46.80vh;
+    width:21.96vw;
+    border-radius: 15px 15px 0px 0px;
   
 }
-
 .botoes{
     display: grid;
     grid-area:botoes;
     text-align: center;
-}
-
-.botoes>ul>li>h1{
-  font:bolder 0.8em "Nunito";
+    background-color:var(--);
+    gap:5px;
+    border-radius: 0px 0px 15px 15px;
+  
 }
 
 .proj>section>.portfolio{
     display: grid;
     grid-area: portfolio;
+   
 }
 
 .proj>section>.login{
@@ -107,5 +125,16 @@ body {
     display: grid;
     grid-area:android;
 }
-
-
+.container {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 10px;
+  }

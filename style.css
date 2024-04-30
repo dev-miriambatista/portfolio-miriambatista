@@ -8,6 +8,7 @@
     --cor3: #BF8F65;
     --cor4: #8C4E37;
     --cor5: #592925;
+    --cor6: #58f1c3;
 }
 * {
     margin: 0;
@@ -17,7 +18,7 @@
 }
 html,
 body {
-    background-image: linear-gradient(to top, #a58365, #403e2260, #dde088f1);
+    background-image: linear-gradient(to top, #a58365, #403e2260, #dde088f1, #58f1c3);
 }
 
 main {
@@ -28,6 +29,7 @@ main {
     display: grid;
     grid-template-columns: 60vw 40vw;
     grid-template-rows: 10vh;
+    
     background-color: #59292570;
 }
 
@@ -147,3 +149,9 @@ section.contato>img {
     width: 40vw;
     height: 87vh;
 }
+
+
+
+
+
+  
