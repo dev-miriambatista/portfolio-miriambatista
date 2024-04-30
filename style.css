@@ -2,14 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Padrão+TT:ital,wght@0,400;0,700;1,400&family=Patrick+Hand+SC&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Patrick+Hand+SC&display=swap');
+
+
 :root {
-    --cor1: #dde088f1;
-    --cor2: #403e2260;
-    --cor3: #BF8F65;
-    --cor4: #8C4E37;
-    --cor5: #592925;
-    --cor6: #58f1c3;
+--cor0: #BF8F65; 
+--cor1: #BF9C88; 
+--cor2: #858C51; 
+--cor3: #403E22; 
+--cor4: #fc929b; 
+--cor5: #40281F; 
+--cor6: #c2565f; 
+--cor7: #724347; 
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,19 +23,19 @@
 }
 html,
 body {
-    background-image: linear-gradient(to top, #a58365, #403e2260, #dde088f1, #58f1c3);
+    background-image:linear-gradient(to right, var(--cor4), var(--cor5), var(--cor1));
 }
 
 main {
     display: grid;
 }
 
-.cab {
+.cab { 
     display: grid;
     grid-template-columns: 60vw 40vw;
     grid-template-rows: 10vh;
-    
-    background-color: #59292570;
+    background-color:var(--cor7);
+    box-shadow: 2px 2px 10px #c2565f;
 }
 
 .cab>header>h1 {
@@ -48,7 +53,6 @@ nav {
     align-content: center;
     color:#050505;
     font:bolder 1em "Nunito";
-    
 }
 
 li {
@@ -56,6 +60,7 @@ li {
     margin: .5;
     padding: 2px;
     font:bolder 1em "Nunito";
+    box-shadow: 2px 2px 10px #c2565f;
 }
 
 a {
@@ -66,15 +71,18 @@ a {
     font:bolder 1em "Nunito";
 }
 a:hover{
-    color: rgb(0, 0, 0);
+    color: #000000;
     transition: 0.5s;
     background-color: #7cbd7c;
 }
 
 .capa {
     display: grid;
-    grid-template-columns: 55vw 45vw;
-    grid-template-rows:10vh 20vh 2vh 45vh 9vh;
+    grid-template-columns: 52vw 45vw;
+    grid-template-rows:10vh 18vh 2vh 42vh 10vh;
+    margin: 1.5% 5%;
+    background-color:var(--cor2);
+    box-shadow: 2px 2px 10px #40281F;
     grid-template-areas:
         "h2 perfil"
         "p1 perfil"
@@ -83,14 +91,17 @@ a:hover{
         "contato perfil";
 }
 
-.capa>h2 {
+h1 {
     display: inline-grid;
-    margin-left: 48px;
+    margin-left: 68px;
     font:bolder 2em "Nunito";
-    text-align: justify;
     width: 600px;
-    background-color:#ffffff60;
     padding: 3%;
+}
+
+.par{
+    margin-left: -35%;
+    margin-top: 4%; 
 }
 
 #p1 {
@@ -99,8 +110,7 @@ a:hover{
     font:bolder 1em "Nunito";
     text-align: justify;
     width: 600px;
-    background-color:#ffffff60;
-    padding: 3%;
+    padding: 1% 3%;
 }
 
 #p2 {
@@ -109,8 +119,7 @@ a:hover{
     font:bolder 1em "Nunito";
     text-align: justify;
     width: 600px;
-    background-color:#ffffff60;
-    padding: 3%;
+    padding: 1% 3%;
    
 }
 
@@ -120,8 +129,7 @@ a:hover{
     font:bolder 1em "Nunito";
     text-align: justify;
     width: 600px;
-    background-color:#ffffff60;
-    padding: 3%;
+    padding: 1% 3%;
 }
 
 .contato {
@@ -130,24 +138,139 @@ a:hover{
     width: 5vw;
     border-radius: 50%;
     align-content: center;
-    align-content: space-between;
-    margin-bottom: 10px;  
+    align-content: space-evenly;
+    margin-bottom: 10px;
+    margin-left: 90%;
 }
 
 section.contato>img {
     display: flex;
     grid-area: contato;
-    align-content: center;
     width: 5vw;
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 20%;
     background-color:#ffffff60;
+    box-shadow: 2px 2px 10px #40281F;
 }
 
 .capa>#perfil {
-    top: 10%;
-    width: 40vw;
-    height: 87vh;
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 36vw;
+    box-shadow: 2px 2px 10px #40281F;
+}
+
+/*_________________________________________________________________________________*/
+.proj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120vh;
+    justify-items: center;
+    background-image:linear-gradient(to top, var(--cor4), var(--cor2), var(--cor1));
+    grid-template-areas:
+        "portfolio login";
+}
+
+.proj2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120vh;
+    justify-items: center;
+    background-image:linear-gradient(to top, var(--cor1), var(--cor2), var(--cor4));
+    grid-template-areas:
+        "rede-social cordel-moderno android";
+}
+
+.proj>ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #050505;
+    font: bolder 1em "Nunito";
+}
+
+.proj2>ul {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    color: #050505;
+    font: bolder 1em "Nunito";
+
+}
+
+.proj,
+.proj2>ul>li {
+    display: flex;
+    justify-content: space-evenly;
+    color: #050505;
+    font: bolder 1.2em "Nunito";
+    padding: 3%;
+    margin: 3px;
+}
+
+h2 {
+    display: grid;
+    font: bolder 1em "Nunito";
+    text-align: center;
+
+}
+
+.fport,
+.flogin,
+.fsocial,
+.fcordel,
+.fandroid {
+    height: 46.80vh;
+    width: 21.96vw;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.botoes {
+    display: grid;
+    grid-area: botoes;
+    text-align: center;
+}
+
+.proj>section>.portfolio {
+    display: grid;
+    grid-area: portfolio;
+
+}
+
+.proj>section>.login {
+    display: grid;
+    grid-area: login;
+}
+
+.proj2>section>.rede-social {
+    display: grid;
+    grid-area: rede-social;
+}
+
+.proj2>section>.cordel-moderno {
+    display: grid;
+    grid-area: cordel-moderno;
+}
+
+.proj2>section>.android {
+    display: grid;
+    grid-area: android;
+}
+
+.container {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 

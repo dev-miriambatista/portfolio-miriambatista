@@ -1,140 +1,25 @@
 @charset "utf-8";
 
 :root {
-
-cor0: #F2D0DD; 
-cor1: #ee0b62; 
-
-cor2: #CCB8D9; 
-cor3: #8700e0; 
-
-cor4: #C4F2DD; 
-cor5: #08d378; 
-
-cor6: #F2E3B3; 
-cor7: #dfaf12; 
-
-cor8: #F2D0BD; 
-cor9: #e66216; 
+    --cor0: #BF8F65; 
+    --cor1: #BF9C88; 
+    --cor2: #858C51; 
+    --cor3: #403E22; 
+    --cor4: #F27E88; 
+    --cor5: #40281F; 
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
 html,
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, #F2D0DD,#CCB8D9,#C4F2DD,#F2E3B3,#F2D0BD);
-    background-size: cover;
-}
 
-.proj{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 120vh;
-    justify-items: center;
-    margin-top: 10vh ;
-    margin-bottom: 20vh;
-    grid-template-areas:
-    "portfolio login";
-}
-.proj2{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 20vh ;
-    margin-bottom: 20vh;
-    grid-auto-rows: 120vh;
-    justify-items: center;
-    grid-template-areas:
-    "rede-social cordel-moderno android";
-}
 
-.proj > ul {
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    color: #050505;
-    font: bolder 1em "Nunito";
 }
-
-.proj2 > ul {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    color: #050505;
-    font: bolder 1em "Nunito";
- 
-}
-
-.proj,.proj2> ul > li {
-    display:flex;
-    justify-content: space-evenly;
-    color: #050505;
-    font: bolder 1.2em "Nunito";
-    padding: 3%;
-    margin: 3px;
-}
-
-h2{
-    display: grid;
-    font: bolder 1em "Nunito";
-    text-align: center;
-    background-color: #58f1c3;
-}
-.fport,.flogin,.fsocial,.fcordel,.fandroid{
-    height:46.80vh;
-    width:21.96vw;
-    border-radius: 15px 15px 0px 0px;
-  
-}
-.botoes{
-    display: grid;
-    grid-area:botoes;
-    text-align: center;
-    background-color:var(--);
-    gap:5px;
-    border-radius: 0px 0px 15px 15px;
-  
-}
-
-.proj>section>.portfolio{
-    display: grid;
-    grid-area: portfolio;
-   
-}
-
-.proj>section>.login{
-    display: grid;
-    grid-area: login;
-}
-
-.proj2>section>.rede-social{
-    display: grid;
-    grid-area:rede-social;
-}
-
-.proj2>section>.cordel-moderno{
-    display: grid;
-    grid-area:cordel-moderno;
-}
-
-.proj2>section>.android{
-    display: grid;
-    grid-area:android;
-}
-.container {
-    margin: 50px auto;
-    text-align: center;
-  }
-  
-  .scrolling-text {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 200px;
-    border: 1px solid #ccc;
-    margin: 10px auto;
-    padding: 10px;
-  }
