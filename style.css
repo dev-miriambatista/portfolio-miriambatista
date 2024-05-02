@@ -13,6 +13,7 @@
 --cor5: #40281F; 
 --cor6: #c2565f; 
 --cor7: #724347; 
+
 }
 
 * {
@@ -28,6 +29,8 @@ body {
 
 main {
     display: grid;
+    margin:0% 7% 0% 7%;
+    background-color: var(--cor6);
 }
 
 .cab { 
@@ -53,6 +56,7 @@ nav {
     align-content: center;
     color:#050505;
     font:bolder 1em "Nunito";
+
 }
 
 li {
@@ -74,15 +78,15 @@ a:hover{
     color: #000000;
     transition: 0.5s;
     background-color: #7cbd7c;
+    box-shadow: 2px 2px 10px #c2565f;
 }
 
 .capa {
     display: grid;
-    grid-template-columns: 52vw 45vw;
-    grid-template-rows:10vh 18vh 2vh 42vh 10vh;
+    grid-template-columns: 30vw 55vw;
+    grid-template-rows: 10vh 18vh 2vh 42vh 10vh;
+    background-color: antiquewhite;
     margin: 1.5% 5%;
-    background-color:var(--cor2);
-    box-shadow: 2px 2px 10px #40281F;
     grid-template-areas:
         "h2 perfil"
         "p1 perfil"
@@ -92,44 +96,21 @@ a:hover{
 }
 
 h1 {
-    display: inline-grid;
-    margin-left: 68px;
+
     font:bolder 2em "Nunito";
-    width: 600px;
-    padding: 3%;
+    width: 35vw;
+ 
 }
 
 .par{
-    margin-left: -35%;
-    margin-top: 4%; 
-}
-
-#p1 {
     display: inline-grid;
-    margin-left: 48px;
+    width:40vw;
+    margin-top: 2%;
+    margin-left: 4vw;
+    text-shadow: 2px 2px 3px #754b4e; 
+    padding: 1% 3%;
     font:bolder 1em "Nunito";
     text-align: justify;
-    width: 600px;
-    padding: 1% 3%;
-}
-
-#p2 {
-    display: inline-grid;
-    margin-left: 48px;
-    font:bolder 1em "Nunito";
-    text-align: justify;
-    width: 600px;
-    padding: 1% 3%;
-   
-}
-
-#p3 {
-    display: inline-grid;
-    margin-left: 48px;
-    font:bolder 1em "Nunito";
-    text-align: justify;
-    width: 600px;
-    padding: 1% 3%;
 }
 
 .contato {
@@ -140,7 +121,7 @@ h1 {
     align-content: center;
     align-content: space-evenly;
     margin-bottom: 10px;
-    margin-left: 90%;
+    margin-left: 80%;
 }
 
 section.contato>img {
@@ -164,114 +145,151 @@ section.contato>img {
 /*_________________________________________________________________________________*/
 .proj {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120vh;
-    justify-items: center;
-    background-image:linear-gradient(to top, var(--cor4), var(--cor2), var(--cor1));
+    grid-template-columns: 36.5vw 40vw;
+    grid-template-rows: auto;
+    margin: 1.5% 5%;
+    row-gap:3.5%;
+    align-items: center;
     grid-template-areas:
-        "portfolio login";
-}
-
-.proj2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 120vh;
+        "portfolio par01"
+        "login par02"
+        "rede-social par03"
+        "cordel-moderno par04"
+        "android par05";
     justify-items: center;
-    background-image:linear-gradient(to top, var(--cor1), var(--cor2), var(--cor4));
-    grid-template-areas:
-        "rede-social cordel-moderno android";
 }
 
 .proj>ul {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
     color: #050505;
     font: bolder 1em "Nunito";
-}
-
-.proj2>ul {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    color: #050505;
-    font: bolder 1em "Nunito";
+    background-color: var(--cor6);
+    align-items: center;
 
 }
-
-.proj,
-.proj2>ul>li {
-    display: flex;
-    justify-content: space-evenly;
+.proj >ul>li {
+    display: grid;
     color: #050505;
     font: bolder 1.2em "Nunito";
     padding: 3%;
     margin: 3px;
 }
-
+li{
+    background-color:var(--cor2);
+    box-shadow: 2px 2px 10px #40281F;
+    margin:1.5px 0px;
+    box-shadow: 2px 2px 10px #c2565f;
+}
 h2 {
     display: grid;
-    font: bolder 1em "Nunito";
-    text-align: center;
-
+    font: bolder 2em "Nunito";
+    text-align:center;
 }
-
 .fport,
 .flogin,
 .fsocial,
 .fcordel,
 .fandroid {
-    height: 46.80vh;
-    width: 21.96vw;
-    border-radius: 15px 15px 0px 0px;
+    display:inline-grid;
+    align-items:center;
+    justify-content:left;
+    height: 33.40vh;
+    width: 15.96vw;
+    margin-top: 2%;
+  
 
 }
-
 .botoes {
     display: grid;
     grid-area: botoes;
-    text-align: center;
+    text-align:center;
+    justify-content: center;
 }
+.par01,
+.par02,
+.par03,
+.par04,
+.par05{
+    display:grid;
+    align-items:center;
+    justify-content: center;
+    width: 30vw;
+    height: auto;
+    
+    
+}
+.par01{
+    display: grid;
+    grid-area:par01;
+    margin-top: 2%;
+    width: 20vw;
+  
+ 
+}
+.par02{
+    display: grid;
+    grid-area:par02;
+    
+   
+}
+.par03{
+    display: grid;
+    grid-area:par03;
+ 
+}
+.par04{
+    display: grid;
+    grid-area:par04;
 
-.proj>section>.portfolio {
+
+}
+.par05{
+    display: grid;
+    grid-area:par05;
+    
+   
+}
+.portfolio {
     display: grid;
     grid-area: portfolio;
+    justify-content: center;
 
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
-
-.proj>section>.login {
+.login {
     display: grid;
     grid-area: login;
-}
+    justify-content: center;
 
-.proj2>section>.rede-social {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.rede-social {
     display: grid;
     grid-area: rede-social;
+    justify-content: center;
+  
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
-
-.proj2>section>.cordel-moderno {
+.cordel-moderno{
     display: grid;
     grid-area: cordel-moderno;
+    justify-content: center;
+  
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
-
-.proj2>section>.android {
+.android {
     display: grid;
     grid-area: android;
+    justify-content: center;
+ 
+        margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
-.container {
-    margin: 50px auto;
-    text-align: center;
-}
-
-.scrolling-text {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 200px;
-    border: 1px solid #ccc;
-    margin: 10px auto;
-    padding: 10px;
-}
 
 
 
