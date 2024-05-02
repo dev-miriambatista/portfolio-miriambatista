@@ -30,7 +30,7 @@ body {
 main {
     display: grid;
     margin:0% 7% 0% 7%;
-    background-color: var(--cor6);
+    
 }
 
 .cab { 
@@ -82,7 +82,7 @@ a:hover{
 }
 
 .capa {
-    display: grid;
+    display:grid;
     grid-template-columns: 30vw 55vw;
     grid-template-rows: 10vh 18vh 2vh 42vh 10vh;
     background-color: antiquewhite;
@@ -145,58 +145,41 @@ section.contato>img {
 /*_________________________________________________________________________________*/
 .proj {
     display: grid;
-    grid-template-columns: 36.5vw 40vw;
-    grid-template-rows: auto;
+    grid-template-columns:20vw auto;
+    grid-template-rows: 60vh;
     margin: 1.5% 5%;
     row-gap:3.5%;
-    align-items: center;
+    align-items:center;
+    box-sizing: border-box;
     grid-template-areas:
         "portfolio par01"
-        "login par02"
+        "login par02 "
         "rede-social par03"
-        "cordel-moderno par04"
+        "cordel-moderno par04 "
         "android par05";
-    justify-items: center;
 }
 
-.proj>ul {
-    display: grid;
-    color: #050505;
-    font: bolder 1em "Nunito";
-    background-color: var(--cor6);
-    align-items: center;
-
-}
-.proj >ul>li {
-    display: grid;
-    color: #050505;
-    font: bolder 1.2em "Nunito";
-    padding: 3%;
-    margin: 3px;
-}
-li{
-    background-color:var(--cor2);
-    box-shadow: 2px 2px 10px #40281F;
-    margin:1.5px 0px;
-    box-shadow: 2px 2px 10px #c2565f;
-}
-h2 {
-    display: grid;
-    font: bolder 2em "Nunito";
-    text-align:center;
-}
 .fport,
 .flogin,
 .fsocial,
 .fcordel,
-.fandroid {
-    display:inline-grid;
-    align-items:center;
-    justify-content:left;
-    height: 33.40vh;
-    width: 15.96vw;
-    margin-top: 2%;
-  
+.fandroid{
+    display: inline-grid;
+    width: 18.96vw;
+}
+.proj>ul {
+    display: grid;
+    color: #050505;
+    font: bolder 1em "Nunito";
+
+}
+.proj >ul>li {
+    display: grid;
+    font: bolder 1em "Nunito";
+    padding: 3%;
+    margin: 3px;
+    box-shadow: 2px 2px 10px #40281F;
+    margin:1.5px 0px;
 
 }
 .botoes {
@@ -205,89 +188,101 @@ h2 {
     text-align:center;
     justify-content: center;
 }
+
+h2 {
+    display: grid;
+    font: bolder 2em "Nunito";
+    text-align:center;
+}
 .par01,
 .par02,
 .par03,
 .par04,
-.par05{
-    display:grid;
-    align-items:center;
-    justify-content: center;
-    width: 30vw;
-    height: auto;
-    
-    
-}
-.par01{
+.par05 {
     display: grid;
-    grid-area:par01;
-    margin-top: 2%;
-    width: 20vw;
-  
- 
+    align-items: center;
+    justify-content: center;
+    background-color:antiquewhite;
+    padding: 1vw 8vh;
+   
+}
+.par01 {
+    display: grid;
+    grid-area: par01;
+    width: 57vw;
+    height: 53.5vh;
+    
 }
 .par02{
     display: grid;
-    grid-area:par02;
-    
-   
+    grid-area: par02;
+    width: 58vw;
+    height: 52vh;
+    margin-left: -1vw;
+
 }
 .par03{
     display: grid;
     grid-area:par03;
- 
+    width: 57vw;
+    height: 53.5vh;
 }
 .par04{
     display: grid;
     grid-area:par04;
-
-
+    width: 57vw;
+    height: 53.5vh;
 }
 .par05{
     display: grid;
-    grid-area:par05;
-    
-   
+    grid-area: par05;
+    width: 58w;
+    height: 58.5vh;
+    margin-left: -1vw;
 }
 .portfolio {
     display: grid;
     grid-area: portfolio;
-    justify-content: center;
+    justify-content: start;
+    border: 6px solid antiquewhite;
+    align-items: start;
+    border-radius: 5% 0% 0% 5%;
 
-    margin-top: 2vh;
-    margin-bottom: 2vh;
 }
 .login {
     display: grid;
     grid-area: login;
-    justify-content: center;
-
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    justify-content: start;
+    border: 6px solid antiquewhite;
+    align-items: start;
+    border-radius: 5% 0% 0% 5%;
 }
 .rede-social {
     display: grid;
     grid-area: rede-social;
-    justify-content: center;
-  
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    justify-content:start;
+    border: 6px solid antiquewhite;
+    align-items: start;
+    border-radius: 5% 0% 0% 5%;
 }
 .cordel-moderno{
     display: grid;
     grid-area: cordel-moderno;
-    justify-content: center;
-  
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    justify-content: start;
+    border: 6px solid antiquewhite;
+    align-items: start;
+    border-radius: 5% 0% 0% 5%;
+
+   
 }
 .android {
     display: grid;
     grid-area: android;
-    justify-content: center;
- 
-        margin-top: 2vh;
-    margin-bottom: 2vh;
+    justify-content: start;
+    border:7.5px solid  antiquewhite;
+    align-items: start;
+    border-radius: 5% 0% 0% 5%;
+
 }
 
 
