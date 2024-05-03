@@ -17,7 +17,10 @@ Extra large screens, TV – 1201px, and more.*/
         background-color: #858C51;
         text-align: center;
     }
-
+.cab{
+    display: flex;
+    flex-direction: column;
+}
     #perfil{
         background-image: url(imagens/f-portifolio/redm01.jpeg);
         text-align: center;
@@ -27,15 +30,14 @@ Extra large screens, TV – 1201px, and more.*/
     }
 
     .capa{
-        display: grid;
-        grid-template-columns: 80%;
-        grid-template-rows: auto;
-    grid-template-areas:
-        "perfil"
-        "p1"
-        "h1"
-        "p2"
-        "contato";
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proj{
+        display: flex;
+        flex-direction: column;
+
     }
     .par{
         background: #fa858526;
