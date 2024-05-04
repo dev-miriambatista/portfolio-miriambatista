@@ -29,7 +29,8 @@ Extra large screens, TV – 1201px, and more.*/
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 120%;
+        width: 100vw;
+        height: 100vh;
         margin:0px;
     }
 
