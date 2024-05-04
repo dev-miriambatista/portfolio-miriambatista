@@ -8,15 +8,16 @@ Extra large screens, TV – 1201px, and more.*/
 
     html,
     body {
+        width: 100vw;
         background-color: aqua;
 
     }
 
     main {
-        width: 80vw;
-        height: 80vh;
-        background-color: #858C51;
-        text-align: center;
+        width: 100vw;
+        background-color: #943561;
+        margin:0px;
+
     }
 
     .cab {
@@ -28,14 +29,14 @@ Extra large screens, TV – 1201px, and more.*/
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 100%;
-
-        margin: 0p;
+        width: 120%;
+        margin:0px;
     }
 
     .capa {
         display: flex;
         flex-direction: column;
+        margin: 0px;
     }
 
     .proj {
