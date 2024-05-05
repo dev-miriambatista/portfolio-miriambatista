@@ -12,14 +12,53 @@ Extra large screens, TV – 1201px, and more.*/
         background-color: aqua;
 
     }
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    }
 
     main {
         width: 100vw;
         background-color: #943561;
         margin:0px;
-
     }
 
+.porth1{
+    margin-left: 20px
+} 
+    #burguer {
+        display: inline-grid;
+        color:#000000;
+        text-align:right;
+        padding:10px;
+        margin-right: 3%;
+    }
+
+    nav {
+        display: none; /* Ocultar o menu de navegação */
+    }
+
+    nav > ul {
+        list-style: none;
+    }
+
+    nav > ul > li > a {
+        display: inline-grid;
+        padding: 10px;
+        text-decoration: none;
+        background-color: #252525;
+        color: white;
+        text-align: center;
+        border: 2px solid #8f6d6d;
+    }
+
+    nav > ul > li > a:hover {
+        background-color: palevioletred;
+        transition: .5s;
+    }
     .cab {
         display: flex;
         flex-direction: column;
@@ -162,13 +201,6 @@ Extra large screens, TV – 1201px, and more.*/
         justify-content: center;
         margin-bottom: 5%;
     }
-}
 
-@media screen and (min-width:320px) and (max-width:480px) {
 
-    html,
-    body {
-        background-color: blue;
-        /* Use a variável cor1 para definir a cor de fundo */
-    }
-}
+   
