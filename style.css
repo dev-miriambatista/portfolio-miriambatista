@@ -45,9 +45,10 @@ main {
 
 header {
     display: grid;
-    grid-template-columns: 55vw 45vw;
+    grid-template-columns: 13vw 59vw;
     grid-template-rows: 10vh;
     box-shadow: 2px 2px 10px #c2565f;
+    justify-content: space-between;
 }
 .porth1 {
     display: inline-grid;
@@ -64,45 +65,54 @@ header {
 nav{
     display: grid;
     position: relative;
-    justify-items: end;
-    width: 34vw;    
 }
 
 nav >ul{
     display: flex;
-    justify-content: space-evenly;
     list-style-type:none;
-    width: 11vw;
-    align-items: baseline;
+    justify-items: center;
+    align-content: center;
+    
+
+   
 }
 
 nav li{
-    display: inline-grid;
-    width: auto;
+    display:grid;
+    margin-right: 2%;
+    justify-items: end;
+    align-items: center;
+    border-radius: 5%;
+
 }
 
-nav a{
+nav a {
     display: grid;
+    width: 11vw;
     text-decoration: none;
     text-align: center;
     border: 2px solid rgba(248, 248, 255, 0);
     color: white;
-    margin: .5;
-    padding: 3px;
     font: bolder 1em "Nunito";
     box-shadow: 2px 2px 10px #c2565f;
-    border: 1px solid antiquewhite;
     background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
+    padding: 7%;
+    border-radius: 25% 10%;
+
+    
+
 }
 
 nav a:hover{
     background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor7));
+    transition: transform 1s, border 0.3s;
 }
 
 i#burguer {
     display: none;
     list-style-type:none;
     text-decoration: none;
+    margin:10%;
    
  }
 
@@ -121,7 +131,8 @@ i#burguer {
         direction: ltr;
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
-        margin-right: 13%;
+          margin:10%;
+    }
 
 
 .capa{
