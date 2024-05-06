@@ -4,9 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Patrick+Hand+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=La+Belle+Aurore&family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Patrick+Hand+SC&display=swap');
 
-
 :root {
-
     --cor0: #BF8F65;
     --cor1: #BF9C88;
     --cor2: #858C51;
@@ -16,41 +14,27 @@
     --cor6: #c2565f;
     --cor7: #724347;
 }
-@media screen and (min-width: 768px) {
+
 * {
-    
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor1));
 }
 
-header{
-    display: grid;
-    justify-content: space-between;
-}
-main {
-    display: grid;
-    margin: 0% 7% 0% 7%;
-    background-color: #ffffff60;
-    height: 550px;
-    width: 80%;
-    text-align: center;
-}
-
 header {
-    display: grid;
-    grid-template-columns: 13vw 59vw;
+    display: inline-grid;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: 10vh;
     box-shadow: 2px 2px 10px #c2565f;
     justify-content: space-between;
 }
-.porth1 {
+
+header h1 {
     display: inline-grid;
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -60,30 +44,24 @@ header {
     color: #ffffff;
 }
 
-
-
-nav{
-    display: grid;
+nav {
+    display: inline-grid;
     position: relative;
 }
 
-nav >ul{
+nav > ul {
     display: flex;
-    list-style-type:none;
+    list-style-type: none;
     justify-items: center;
     align-content: center;
-    
-
-   
 }
 
-nav li{
-    display:grid;
+nav li {
+    display: grid;
     margin-right: 2%;
     justify-items: end;
     align-items: center;
     border-radius: 5%;
-
 }
 
 nav a {
@@ -94,64 +72,55 @@ nav a {
     border: 2px solid rgba(248, 248, 255, 0);
     color: white;
     font: bolder 1em "Nunito";
-    box-shadow: 2px 2px 10px #c2565f;
     background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
     padding: 7%;
-    border-radius: 25% 10%;
-
-    
-
+    transition: transform 2s;
 }
 
-nav a:hover{
+nav a:hover {
     background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor7));
-    transition: transform 1s, border 0.3s;
+    transition: transform 2s;
 }
 
 i#burguer {
-    display: none;
-    list-style-type:none;
+    display: none; /* Alteração da propriedade display para none */
+    list-style-type: none;
     text-decoration: none;
-    margin:10%;
-   
- }
+    margin: 10%;
+}
 
- .material-icons {
-    .material-icons {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 29px;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        -webkit-font-feature-settings: 'liga';
-        -webkit-font-smoothing: antialiased;
-          margin:10%;
-    }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 29px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin: 10%;
+}
 
-
-.capa{
+.capa {
     display: grid;
     grid-template-columns: 30% 40%;
     grid-template-rows: 40% 30% 30%;
-grid-template-areas:
-    "perfil p1"
-    "perfil  h1"
-
-    " .  contato";
+    grid-template-areas: "perfil p1" "perfil h1" ". contato";
 }
+
 #perfil {
     position: relative;
     margin-top: 2%;
     margin-left: 14%;
     box-shadow: 2px 2px 10px #40281F;
 }
-.par{
+
+.par {
     background: #fa858526;
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(2.9px);
@@ -160,14 +129,16 @@ grid-template-areas:
     margin-top: 3%;
     width: 40vw;
 }
-.par>h1{    
+
+.par>h1 {
     font: bolder 4em "La Belle Aurore";
     width: 40vw;
-    text-align:center;
+    text-align: center;
     color: #1a1510;
 }
-#p1{
-    display:grid;
+
+#p1 {
+    display: grid;
     width: 20vw;
     margin-top: 2%;
     margin-left: 15vw;
@@ -176,13 +147,16 @@ grid-template-areas:
     text-align: center;
     color: #1a1510;
 }
-#p2, #p3{
-    display:grid;
+
+#p2,
+#p3 {
+    display: grid;
     padding: 1% 3%;
     font: bolder 1.5em "Nunito";
     justify-items: end;
     color: #ffffff;
 }
+
 .contato {
     display: flex;
     grid-area: contato;
@@ -190,14 +164,16 @@ grid-template-areas:
     justify-content: space-evenly;
     margin-top: 10%;
 }
+
 section.contato>img {
-    display:grid;
+    display: grid;
     grid-area: contato;
     width: 9%;
     border-radius: 50%;
     box-shadow: 2px 2px 10px #40281F;
 }
-#projetos{
+
+#projetos {
     font: bolder 4em "La Belle Aurore";
     width: 100vw;
     text-align: center;
@@ -209,23 +185,18 @@ section.contato>img {
     backdrop-filter: blur(2.9px);
     -webkit-backdrop-filter: blur(2.9px);
 }
-/*_________________________________________________________________________________*/
+
 .proj {
     display: grid;
     grid-template-columns: 20vw 55vw;
     grid-template-rows: 50vh;
     margin: 1.5% 5%;
     row-gap: 3%;
-
     align-items: center;
     box-sizing: border-box;
-    grid-template-areas:
-        "portfolio par01"
-        "login par02 "
-        "rede-social par03"
-        "cordel-moderno par04 "
-        "android par05";
+    grid-template-areas: "portfolio par01" "login par02 " "rede-social par03" "cordel-moderno par04 " "android par05";
 }
+
 .fport,
 .flogin,
 .fsocial,
@@ -234,12 +205,14 @@ section.contato>img {
     display: inline-grid;
     width: 18.96vw;
 }
+
 .proj>ul {
     display: grid;
     color: #050505;
     font: bolder 1em "Nunito";
     margin: 0px;
 }
+
 .botoes>li {
     display: inline-grid;
     margin: .5;
@@ -249,10 +222,12 @@ section.contato>img {
     border: 1px solid antiquewhite;
     background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
 }
+
 .botoes>li>a:hover {
     background-color: antiquewhite;
     transition: background-color 0.5s;
 }
+
 .botoes {
     display: grid;
     grid-area: botoes;
@@ -286,7 +261,6 @@ h2 {
     grid-area: par01;
     width: 57vw;
     height: 53.5vh;
-
 }
 
 .par02 {
@@ -294,8 +268,6 @@ h2 {
     grid-area: par02;
     width: 57vw;
     height: 53.5vh;
-    
-
 }
 
 .par03 {
@@ -317,7 +289,6 @@ h2 {
     grid-area: par05;
     width: 57vw;
     height: 53.5vh;
-    
 }
 
 .portfolio {
@@ -326,8 +297,6 @@ h2 {
     justify-content: start;
     border: 6px solid antiquewhite;
     align-items: start;
-
-
 }
 
 .login {
@@ -336,7 +305,6 @@ h2 {
     justify-content: start;
     border: 6px solid antiquewhite;
     align-items: start;
-
 }
 
 .rede-social {
@@ -345,7 +313,6 @@ h2 {
     justify-content: start;
     border: 6px solid antiquewhite;
     align-items: start;
-
 }
 
 .cordel-moderno {
@@ -354,9 +321,6 @@ h2 {
     justify-content: start;
     border: 6px solid antiquewhite;
     align-items: start;
-
-
-
 }
 
 .android {
@@ -365,8 +329,4 @@ h2 {
     justify-content: start;
     border: 7.5px solid antiquewhite;
     align-items: start;
-
-
-}
-}
 }
