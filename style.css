@@ -6,6 +6,7 @@
 
 
 :root {
+
     --cor0: #BF8F65;
     --cor1: #BF9C88;
     --cor2: #858C51;
@@ -15,7 +16,9 @@
     --cor6: #c2565f;
     --cor7: #724347;
 }
+@media screen and (min-width: 768px) {
 * {
+    
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +29,11 @@ html,
 body {
     background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor1));
 }
+
+header{
+    display: grid;
+    justify-content: space-between;
+}
 main {
     display: grid;
     margin: 0% 7% 0% 7%;
@@ -34,49 +42,88 @@ main {
     width: 80%;
     text-align: center;
 }
-.cab {
+
+header {
     display: grid;
-    grid-template-columns: 60vw 40vw;
+    grid-template-columns: 55vw 45vw;
     grid-template-rows: 10vh;
     box-shadow: 2px 2px 10px #c2565f;
 }
-.cab>header>h1 {
+.porth1 {
+    display: inline-grid;
+    margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     padding: 7px;
     margin-left: 5px;
     color: #ffffff;
 }
-nav {
-    display: inline-grid;
-    grid-column: 2;
+
+
+
+nav{
+    display: grid;
+    position: relative;
+    justify-items: end;
+    width: 34vw;    
+}
+
+nav >ul{
+    display: flex;
     justify-content: space-evenly;
-    align-content: center;
-    color: #050505;
-    font: bolder 1em "Nunito";
+    list-style-type:none;
+    width: 11vw;
+    align-items: baseline;
 }
 
-nav>ul>li {
+nav li{
     display: inline-grid;
-    margin: .5;
-    padding: 2px;
-    font: bolder 1em "Nunito";
-    box-shadow: 2px 2px 10px #c2565f;
+    width: auto;
 }
 
-a {
+nav a{
+    display: grid;
     text-decoration: none;
-    color: #ffffff;
-    padding: 5px;
-
+    text-align: center;
+    border: 2px solid rgba(248, 248, 255, 0);
+    color: white;
+    margin: .5;
+    padding: 3px;
     font: bolder 1em "Nunito";
-}
-a:hover {
-    color: #000000;
-    transition: 0.5s;
-    background-color: #7cbd7c;
     box-shadow: 2px 2px 10px #c2565f;
+    border: 1px solid antiquewhite;
+    background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
 }
+
+nav a:hover{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor7));
+}
+
+i#burguer {
+    display: none;
+    list-style-type:none;
+    text-decoration: none;
+   
+ }
+
+ .material-icons {
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 29px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        margin-right: 13%;
+
+
 .capa{
     display: grid;
     grid-template-columns: 30% 40%;
@@ -88,6 +135,7 @@ grid-template-areas:
     " .  contato";
 }
 #perfil {
+    position: relative;
     margin-top: 2%;
     margin-left: 14%;
     box-shadow: 2px 2px 10px #40281F;
@@ -308,4 +356,6 @@ h2 {
     align-items: start;
 
 
+}
+}
 }
