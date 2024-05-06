@@ -35,6 +35,42 @@ main {
     margin: 0px;
 
 }
+
+header ul{
+    width: 100vw;
+    height: auto;
+}
+nav li{
+    display:grid;
+    margin-right: 2%;
+    justify-items: end;
+    align-items: center;
+
+
+}
+
+nav a {
+    display: grid;
+    width: 100vw;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font: bolder 1em "Nunito";
+    box-shadow: 2px 2px 10px #c2565f;
+    background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
+    padding: 2%;
+   
+
+    
+
+}
+
+nav a:hover{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor7));
+    transition: transform 1s, border 0.3s;
+}
+
+
 .cab {
     display: flex;
     flex-direction: column;
@@ -181,4 +217,5 @@ main {
     justify-items: center;
     justify-content: center;
     margin-bottom: 5%;
+}
 }
