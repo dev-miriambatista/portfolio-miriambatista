@@ -22,19 +22,20 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor1));
 }
 
-main{
-display: grid;
+main {
+    display: grid;
     text-align: center;
     width: 80vw;
     height: 100vh;
-    background: #403E22;
-    margin:0px 10% 0px 10%;
+    background: #f0469b;
+    margin: 0px 10% 0px 10%;
 }
 
 header {
@@ -60,7 +61,7 @@ nav {
     position: relative;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     list-style-type: none;
     justify-items: center;
@@ -94,7 +95,8 @@ nav a:hover {
 }
 
 i#burguer {
-    display: none; /* Alteração da propriedade display para none */
+    display: none;
+    /* Alteração da propriedade display para none */
     list-style-type: none;
     text-decoration: none;
     margin: 10%;
@@ -116,7 +118,7 @@ i#burguer {
     -webkit-font-smoothing: antialiased;
     margin: 10%;
 }
-
+/*
 .capa {
     display: grid;
     width: 100vw;
@@ -126,8 +128,8 @@ i#burguer {
 }
 
 #perfil {
-    display:grid;
-width: 100vw;
+    display: grid;
+    width: 100vw;
     margin-top: 2%;
 
     box-shadow: 2px 2px 10px #40281F;
@@ -138,9 +140,7 @@ width: 100vw;
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(2.9px);
     -webkit-backdrop-filter: blur(2.0px);
-    height: 80vh;
-    margin-top: 3%;
-    width: 40vw;
+
 }
 
 .par>h1 {
@@ -201,25 +201,51 @@ section.contato>img {
 
 .proj {
     display: grid;
-    grid-template-columns: 20vw 55vw;
-    grid-template-rows: 50vh;
+    grid-template-columns: 0vw 12vw;
+    grid-template-rows:min-content;
     margin: 2% 0%;
     row-gap: 3%;
     align-items: center;
     box-sizing: border-box;
-    grid-template-areas: "portfolio par01" "login par02 " "rede-social par03" "cordel-moderno par04 " "android par05";
+    grid-template-areas:
+        "fport  p01"
+        "botoes . "
+        "flogin p02 "
+        "botoes . "
+        "fsocial p03"
+        "botoes . "
+        "fcordel p04 "
+        "botoes . "
+        "fandroid p05"
+        "botoes . "
 }
 
-.fport,
-.flogin,
-.fsocial,
-.fcordel,
+picture>img{
+    margin: 0px;
+}
+
+.fport{
+    grid-area:fport;
+    }
+.flogin{
+grid-area:flogin;
+}
+.fsocial{
+grid-area:fsocial;
+}
+.fcordel {
+    grid-area:fcordel;
+}
 .fandroid {
-    display: inline-grid;
-    width: 20vw;
-    height: 21vw;
+   grid-area:fandroid;
 }
 
+.botoes {
+    display: grid;
+    grid-area: botoes;
+    text-align: center;
+    justify-content: center;
+}
 .proj>ul {
     display: grid;
     color: #050505;
@@ -228,7 +254,7 @@ section.contato>img {
 }
 
 .botoes>li {
-    display: inline-grid;
+    display: grid;
     margin: .5;
     padding: 3px;
     font: bolder 1em "Nunito";
@@ -242,26 +268,15 @@ section.contato>img {
     transition: background-color 0.5s;
 }
 
-.botoes {
-    display: grid;
-    grid-area: botoes;
-    text-align: center;
-    justify-content: center;
-}
-
 h2 {
     display: grid;
     font: bolder 2em "Nunito";
     text-align: center;
 }
 
-.par01,
-.par02,
-.par03,
-.par04,
-.par05 {
+.par {
     display: grid;
-    display: inline-grid;
+    display: grid;
     width: 90vw;
     height: 21vw;
     align-items: center;
@@ -271,52 +286,4 @@ h2 {
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(2.9px);
     -webkit-backdrop-filter: blur(2.9px);
-}
-
-.par01, .par02, .par03,.par04,.par05 {  
-    display: grid;
-  
-    width: 60vw;
-    height: 53.5vh;
-}
-
-.portfolio {
-    display: grid;
-    width: 80%;
-    grid-area: portfolio;
-
-    border: 6px solid antiquewhite;
-   
-}
-
-.login {
-    display: grid;
-    grid-area: login;
-    justify-content: start;
-    border: 6px solid antiquewhite;
-    align-items: start;
-}
-
-.rede-social {
-    display: grid;
-    grid-area: rede-social;
-    justify-content: start;
-    border: 6px solid antiquewhite;
-    align-items: start;
-}
-
-.cordel-moderno {
-    display: grid;
-    grid-area: cordel-moderno;
-    justify-content: start;
-    border: 6px solid antiquewhite;
-    align-items: start;
-}
-
-.android {
-    display: grid;
-    grid-area: android;
-    justify-content: start;
-    border: 7.5px solid antiquewhite;
-    align-items: start;
 }
