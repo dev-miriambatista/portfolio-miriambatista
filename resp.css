@@ -2,12 +2,13 @@
 @media screen and (max-width: 768px) {
 
 html, body {
-    background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor1));
+    background-color:#c2565f(--cor3);
 
 }
+main{
+margin:0px;
 
-
-
+}
 header {
     display: inline-grid;
     grid-template-columns: 50vw 50vw;
@@ -142,10 +143,12 @@ i#burguer {
 
 .contato {
     display: flex;
+    width: 179%;
     grid-area: contato;
     border-radius: 50%;
-    justify-content: space-evenly;
-    margin-top: 10%;
+    justify-content: space-around;
+    margin-top: 6%;
+    margin-left: -78px;
 }
 
 section.contato>img {

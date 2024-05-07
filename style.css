@@ -23,12 +23,23 @@
 }
 
 html, body {
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor1));
+}
+
+main{
+display: grid;
+    text-align: center;
+    width: 80vw;
+    height: 100vh;
+    background: #403E22;
+    margin:0px 10% 0px 10%;
 }
 
 header {
     display: inline-grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 28vw 50vw;
     grid-template-rows: 10vh;
     box-shadow: 2px 2px 10px #c2565f;
     justify-content: space-between;
@@ -73,7 +84,7 @@ nav a {
     color: white;
     font: bolder 1em "Nunito";
     background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
-    padding: 7%;
+    padding: 3%;
     transition: transform 2s;
 }
 
@@ -108,15 +119,17 @@ i#burguer {
 
 .capa {
     display: grid;
-    grid-template-columns: 30% 40%;
+    width: 100vw;
+    grid-template-columns: 40% 40%;
     grid-template-rows: 40% 30% 30%;
-    grid-template-areas: "perfil p1" "perfil h1" ". contato";
+    grid-template-areas: "perfil p1" ".  h1" ". contato";
 }
 
 #perfil {
-    position: relative;
+    display:grid;
+width: 100vw;
     margin-top: 2%;
-    margin-left: 14%;
+
     box-shadow: 2px 2px 10px #40281F;
 }
 
@@ -162,7 +175,8 @@ i#burguer {
     grid-area: contato;
     border-radius: 50%;
     justify-content: space-evenly;
-    margin-top: 10%;
+
+    align-items: center;
 }
 
 section.contato>img {
@@ -175,11 +189,10 @@ section.contato>img {
 
 #projetos {
     font: bolder 4em "La Belle Aurore";
-    width: 100vw;
+    width: 80%;
     text-align: center;
     color: #1a1510;
     margin-top: 4%;
-    margin-left: -95px;
     background: #ffffff26;
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(2.9px);
@@ -190,7 +203,7 @@ section.contato>img {
     display: grid;
     grid-template-columns: 20vw 55vw;
     grid-template-rows: 50vh;
-    margin: 1.5% 5%;
+    margin: 2% 0%;
     row-gap: 3%;
     align-items: center;
     box-sizing: border-box;
@@ -203,7 +216,8 @@ section.contato>img {
 .fcordel,
 .fandroid {
     display: inline-grid;
-    width: 18.96vw;
+    width: 20vw;
+    height: 21vw;
 }
 
 .proj>ul {
@@ -247,6 +261,9 @@ h2 {
 .par04,
 .par05 {
     display: grid;
+    display: inline-grid;
+    width: 90vw;
+    height: 21vw;
     align-items: center;
     justify-content: center;
     padding: 1vw 8vh;
@@ -256,47 +273,20 @@ h2 {
     -webkit-backdrop-filter: blur(2.9px);
 }
 
-.par01 {
+.par01, .par02, .par03,.par04,.par05 {  
     display: grid;
-    grid-area: par01;
-    width: 57vw;
-    height: 53.5vh;
-}
-
-.par02 {
-    display: grid;
-    grid-area: par02;
-    width: 57vw;
-    height: 53.5vh;
-}
-
-.par03 {
-    display: grid;
-    grid-area: par03;
-    width: 57vw;
-    height: 53.5vh;
-}
-
-.par04 {
-    display: grid;
-    grid-area: par04;
-    width: 57vw;
-    height: 53.5vh;
-}
-
-.par05 {
-    display: grid;
-    grid-area: par05;
-    width: 57vw;
+  
+    width: 60vw;
     height: 53.5vh;
 }
 
 .portfolio {
     display: grid;
+    width: 80%;
     grid-area: portfolio;
-    justify-content: start;
+
     border: 6px solid antiquewhite;
-    align-items: start;
+   
 }
 
 .login {
