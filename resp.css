@@ -65,7 +65,7 @@
     }
     
     nav a:hover {
-        background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor7));
+        background-color:var(--cor7);
         transition: transform 2s;
     }
     
@@ -156,7 +156,7 @@
         grid-area: contato;
         width: 9%;
         border-radius: 50%;
-        box-shadow: 2px 2px 10px #40281F;
+
     }
     
     #projetos {
@@ -167,10 +167,8 @@
         margin-top: 20%;
         margin-bottom: 10%;
  
-        background: #ffffff26;
-        box-shadow: 0 4px 30px #0000001a;
-        backdrop-filter: blur(2.9px);
-        -webkit-backdrop-filter: blur(2.9px);
+    
+   
     }
 
     .proj{
@@ -187,12 +185,12 @@
     .fport,.flogin, .fsocial, .fcordel,.fandroid {
         width: 40vw;
         padding: 10vw;
-        background-color:#698c51da;
+        
         border-style:hidden;
         }
     #portfolio,  #login, #rede-social, #cordel-moderno,#android{
         width: 60vw;
-        background: #ffffff26;
+      
         box-shadow: 0 4px 30px #0000001a;
         backdrop-filter: blur(2.9px);
         -webkit-backdrop-filter: blur(2.9px);
