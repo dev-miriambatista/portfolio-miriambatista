@@ -26,7 +26,8 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor1));
+    background-image: url(imagens/bg\ poa.svg);
+ 
 }
 
 main {
@@ -35,7 +36,7 @@ main {
     width: 80vw;
     height: 100vh;
     margin: auto;
-    background: #8cbd85;
+
 
 }
 
@@ -67,6 +68,7 @@ nav>ul {
     list-style-type: none;
     justify-items: center;
     align-content: center;
+
 }
 
 nav li {
@@ -85,9 +87,10 @@ nav a {
     border: 2px solid rgba(248, 248, 255, 0);
     color: white;
     font: bolder 1em "Nunito";
-    background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
+   
     padding: 3%;
     transition: transform 2s;
+    background-color:violet;
 }
 
 nav a:hover {

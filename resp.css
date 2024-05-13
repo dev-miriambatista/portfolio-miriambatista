@@ -2,7 +2,7 @@
 @media screen and (max-width: 768px) {
 
     html, body {
-        background-color:#c2565f(--cor3);
+        background-image: url(imagens/bg\ poa.svg);
     
     }
     main{
@@ -14,7 +14,7 @@
         display: inline-grid;
         grid-template-columns: 50vw 50vw;
         grid-template-rows: 10vh;
-        box-shadow: 2px 2px 10px #c2565f;
+       
         justify-content: space-between;
     }
     
@@ -31,6 +31,7 @@
     nav {
         display: inline-grid;
         position: relative;
+        background-color: aquamarine;
         
     }
     
@@ -59,9 +60,8 @@
         border: 2px solid rgba(248, 248, 255, 0);
         color: white;
         font: bolder 1em "Nunito";
-        background-image: linear-gradient(to right, var(--cor7), var(--cor6), var(--cor1));
-    
         transition: transform 2s;
+        background-color: aquamarine;
     }
     
     nav a:hover {
@@ -105,10 +105,10 @@
     }
     
     .par {
-        background: #fa858526;
+        /*background: #fa858526;
         box-shadow: 0 4px 30px #0000001a;
         backdrop-filter: blur(2.9px);
-        -webkit-backdrop-filter: blur(2.0px);
+        -webkit-backdrop-filter: blur(2.0px);*/
         height: 80vh;
         margin-top: 3%;
         width: 40vw;
@@ -185,7 +185,7 @@
         margin-bottom: 15%;
     }
     .fport,.flogin, .fsocial, .fcordel,.fandroid {
-        width: 60vw;
+        width: 40vw;
         padding: 10vw;
         background-color:#698c51da;
         border-style:hidden;
