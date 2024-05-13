@@ -183,7 +183,7 @@
         margin-bottom: 15%;
     }
     .fport,.flogin, .fsocial, .fcordel,.fandroid {
-        width: 40vw;
+        width: auto;
         padding: 10vw;
         
         border-style:hidden;
