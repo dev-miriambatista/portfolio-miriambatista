@@ -94,7 +94,7 @@ nav a {
 }
 
 nav a:hover {
-    background-image: linear-gradient(to right, var(--cor1), var(--cor6), var(--cor7));
+    background-color:var(--cor7);
     transition: transform 2s;
 }
 
