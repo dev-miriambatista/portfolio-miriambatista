@@ -122,3 +122,44 @@ i#burguer {
     -webkit-font-smoothing: antialiased;
     margin: 10%;
 }
+
+.capa{
+    display: grid;
+    grid-template-columns: 20vw 50vw;
+    grid-template-rows: 10vh 80vh 10vw;
+    justify-items: center;
+    margin: 5vh;
+    row-gap: 10vh;
+    grid-template-areas:
+    ".  perfil"
+    "saudacao ." 
+    "contato";
+}
+
+#saudacao{
+    display: grid;
+    width: 50vw;
+    justify-items: end;
+    margin-top: 30vh;
+  
+}
+
+.fport img{
+    margin-left: 10vw;
+}
+.contato{
+    display: flex;
+    width: 11vw;
+    margin-top: 58vh;
+    justify-items: flex-start;
+    justify-content: space-between;
+    margin-left: 20vw;
+    background-color: black;
+
+ 
+    
+
+}
+  
+
+ 
