@@ -182,8 +182,33 @@
         width: 60vw;
     } 
 
-    .botoes01{
+    .botoes{
         color: white;
         text-align: center;
+        text-decoration: none;
+      
+
+   a{
+    width: 100%;
+    height: 100%;
+        color: crimson;
+        background-color: fuchsia;
+        color:black;
+        font-size: 1em;
+    }
+
+    a:hover{
+        width: 100%;
+        background-color: springgreen;
+            color:black;
+            font-size: 1em;
+        }
+
+    li{
+        display: grid;
+        color:black;
+        font-size: 1.2em;
+        margin: 1%;
     }
     }
+}
