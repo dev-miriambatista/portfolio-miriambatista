@@ -19,7 +19,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+
 }
 
 html,
@@ -84,7 +84,7 @@ nav a {
     width: 11vw;
     text-decoration: none;
     text-align: center;
-    border: 2px solid rgba(248, 248, 255, 0);
+ 
     color: white;
     font: bolder 1em "Nunito";
    

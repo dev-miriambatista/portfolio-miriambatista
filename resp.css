@@ -153,13 +153,26 @@
         text-align:center;
         width: 100vw;
     }
-    #p01,#p02,#p03,#p04,#p05 {
-        width: 61vw;
-        margin-left: 20%;
-        height: auto;
+
+    .proj ul{
         text-align: center;
-        margin-bottom: 15%;
-        margin-top: -60vh;
+    }
+
+    .proj h2{
+        text-align:center;
+}
+
+
+    #p01,#p02,#p03,#p04,#p05 {
+    
+    width: 52vw;
+    margin-left: 18%;
+    height: auto;
+    margin-bottom: 15%;
+    margin-top: -69vh;
+    text-align: justify;
+    font-size: 0.9em;
+    padding: 7%;
     }
     .fport,.flogin, .fsocial, .fcordel,.fandroid {
         width: auto;        
@@ -171,5 +184,6 @@
 
     .botoes01{
         color: white;
+        text-align: center;
     }
     }
