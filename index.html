@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Miriam Batista</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resp.css">
 </head>
 
 <body onresize="mudouTamanho()"></body>
-    <header>
-        <h1>Portfólio</h1>
-        <i id="burguer" class="material-icons"onclick="clickMenu()">menu</i>
-<nav id="itens">
+<header>
+    <h1>Portfólio</h1>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="itens">
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -23,149 +23,182 @@
                 <li><a href="#">CONTATO</a></li>
             </ul>
         </nav>
-    </header>
+</header>
 
 
+<main>
 
+    <div class="capa">
+        <picture class="fport">
+            <source media="(max-width: 768px)" srcset="imagens/figma/perfil-cel.jpg"><img
+                src="imagens/figma/perfil-mi.png" alt="port">
+        </picture>
 
-    <main>
-     
-        <div class="capa">
-            <picture class="fport">
-                <source media="(max-width: 768px)" srcset="imagens/figma/perfil-cel.jpg"><img src="imagens/figma/perfil.jpg" alt="port">
-            </picture>
+        <img src="imagens/figma/Mockup/Post-it-1.png" alt="">
 
-            <div id="saudacao">
-                <h1>Bem vindo ao meu <br>
-                    portfólio, eu sou <br>
-                    Miriam Batista <br>
-                    e este é o meu portfólio de <br>Web Desenvolvimento</h1>
-            </div>
-            <div class="par">
- 
-            </div>
-            <section class="contato">
-                <img src="imagens/Nova pasta/logo-github.jpg" alt="github">
-                <img src="imagens/Nova pasta/linkedin-logo.jpg" alt="linkdin">
-                <img src="imagens/Nova pasta/logo-instagram.jpg" alt="instagram">
-                <img src="imagens/Nova pasta/logo-facebook.jpg" alt="facebook">
-                <img src="imagens/Nova pasta/logo-pinterest.jpg" alt="pinterest">
-                <img src="imagens/Nova pasta/inscricao.png" alt="cv">
-            </section>
+        <div id="saudacao">
+            <p>Bem vindo, eu sou <br>
+                <mark id="pink">Miriam Batista</mark> <br> e este é o meu portfólio <br>
+                de Web Desenvolvimento
+            </p>
+
         </div>
-        
+        <div class="par">
+
+        </div>
+        <section class="contato">
+            <ul>
+                <li><img src="imagens/Nova pasta/logo-github.jpg" alt="github"></li>
+                <li><img src="imagens/Nova pasta/linkedin-logo.jpg" alt="linkdin"></li>
+                <li><img src="imagens/Nova pasta/logo-instagram.jpg" alt="instagram"></li>
+                <li><img src="imagens/Nova pasta/logo-facebook.jpg" alt="facebook"></li>
+                <li><img src="imagens/Nova pasta/logo-pinterest.jpg" alt="pinterest"></li>
+                <li><img src="imagens/Nova pasta/inscricao.png" alt="cv"></li>
+            </ul>
+        </section>
+    </div>
 
 
-        <h1 id="projetos">Projetos</h1>
 
-        <div class="proj">
-      
-                    <picture class="fport">
-                        <source media="(max-width: 768px)" srcset="imagens/figma/portfolio-cel.jpg"><img src="imagens/figma/portfolio.jpg" alt="port">
-                    </picture>
-                  
-                           
-                                <div class="par" id="p01">
-                                    <ul class="botoes">                   
-                                        <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto</li></a>
-                                        <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</a></ul>
-                                    </ul>
-                    <p>
-                    <h2>Portfólio</h2>
-                    Este código HTML e CSS cria um portfólio web responsivo. Utiliza HTML semântico para estruturar a página. A responsividade é garantida com media queries CSS e JavaScript. Imagens responsivas são implementadas para uma experiência consistente em diferentes dispositivos. O Grid Layout CSS organiza os elementos em um layout flexível. Estilos de navegação melhoram a usabilidade, com transições suaves e mudanças de cor. As imagens são estilizadas com sombras e bordas arredondadas. O código oferece uma base sólida para um portfólio online dinâmico e visualmente atraente.
-                    </p>
-                                </div>
-        
+    <h1 id="projetos">Projetos</h1>
 
-           
-                <picture class="flogin">
-                    <source media="(max-width: 768px)" srcset="imagens/figma/responsivo-cel.jpg"><img src="imagens/figma/responsivo.jpg" alt="port">
-                </picture>
+    <div class="proj">
 
-               
+        <div class="portfolio">
+        <picture class="fport">
+            <h2>Portfólio</h2>
+            <source media="(max-width: 768px)" srcset="imagens/figma/portfolio-cel.jpg"><img
+                src="imagens/figma/portfolio.png" alt="port">
+        </picture>
 
-                <div class="par" id="p02">
-                    <ul class="botoes">
-                        <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto</li></a>
-                        <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li><a>
-                    </ul>
-                <p>
-                <h2>Login Responsivo</h2>
-                Este código HTML e CSS cria uma página de login responsiva. A estrutura HTML contém elementos para entrada de e-mail, senha e botão de login, além de links para recuperação de senha. O CSS utiliza media queries para ajustar o layout da seção de login com base no tamanho da tela. Para telas entre 768px e 992px, a seção tem 80vw de largura e 70vh de altura, com a imagem à esquerda e o formulário à direita. Para telas maiores que 993px, a altura da seção é aumentada para 90vh, o texto é centralizado verticalmente e o formulário é ajustado para ocupar 60% da largura, com um espaçamento superior de 30vh.
-                </p>
-            </div>
-        
-                <picture class="fsocial">
-                    <source media="(max-width: 768px)" srcset="imagens/figma/rede-social-cel.jpg"><img src="imagens\figma\rede-social.jpg
-                    " alt="port">
-                </picture>
 
-               
-      
-                <div class="par" id="p03">
-                    <ul class="botoes">                   
-                        <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto</li></a>
-                        <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</a></ul>
-                    </ul>
-                <p>
-                <h2>Rede Social</h2>
-                Este código HTML e CSS cria uma página de rede social. A estrutura HTML contém seções para exibir um telefone simulado com uma tela de navegação e ícones de redes sociais. O CSS define estilos para o layout da página, incluindo a posição do telefone e dos ícones das redes sociais. O fundo da página é uma imagem de madeira e os ícones têm efeitos de sombra e transição quando passados por cima.
-                </p>
-            </div>
+            <ul id="botoes-port">
+                <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto
+                </li></a>
+                <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</a>
+            </ul>
+            </ul>
           
-             
-                       <picture class="fcordel">
-                        <source media="(max-width: 768px)" srcset="imagens/figma/paralax-cel.jpg"><img src="imagens/figma/paralax.jpg" alt="port">
-                    </picture>
-                 
-              
-     
-                <div class="par" id="p04">
-                    <ul class="botoes">
-                        <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto</a></li>
-                        <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li><a>
-                    </ul>
-                <p>
-                <h2>Cordel Moderno</h2>
-                Este código HTML e CSS cria uma página de projeto de cordel moderno. A estrutura HTML contém seções para diferentes partes do poema, incluindo texto e imagens. O CSS define estilos para o layout da página, como as fontes, cores de fundo e sombras. O cabeçalho contém o título do cordel e informações sobre o autor. As seções são estilizadas para diferenciar entre o texto normal e as partes com imagens de fundo. 
-                </p>
-            </div>
-       
-                <picture class="fandroid">
-                    <source media="(max-width: 768px)" srcset="imagens/figma/iframe-cel.jpg"><img src="imagens/figma/iframe.jpg" alt="port">
-                </picture>
-                
-             
-
-                <div class="par" id="p05">
-                    <ul class="botoes">
-                        <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto</a></li>
-                        <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li><a>
-                    </ul>
-                <p>
-                <h2>Android</h2>
-                Este código HTML e CSS cria uma página sobre curiosidades de tecnologia. O HTML estrutura o conteúdo da página com cabeçalho, navegação, conteúdo principal e rodapé. O CSS define os estilos visuais, como cores, fontes e layout da página. O cabeçalho apresenta o título do site e uma breve descrição. A navegação permite acessar diferentes seções do site. O conteúdo principal inclui informações sobre o mascote do Android, com imagens e vídeos incorporados. O rodapé exibe informações sobre o criador do site.
-                </p>
-            </div>
+            <p id="p01">
+                Este código HTML e CSS cria um portfólio responsivo. Utiliza semântica para estruturar a página. A
+                responsividade é garantida com media queries CSS e JavaScript. Imagens responsivas são implementadas
+                para uma experiência consistente em diferentes dispositivos. O Grid Layout organiza os elementos em um
+                layout flexível. Estilos de navegação melhoram a usabilidade, com transições suaves e mudanças de cor. O
+                código oferece uma base sólida para um portfólio online dinâmico e visualmente atraente.
+            </p>
         </div>
-    </main>
 
-    <script>
-        function mudouTamanho(){
-            if(window.innerWidth>=768){
-                itens.style.display='block'    
-            } else{
-                itens.style.display='none'
-            }
-        }
-        function clickMenu(){
-            if(itens.style.display=='block'){
-            itens.style.display='none'
-        }else{
-             (itens.style.display='block')
+        <div class="login">
+        <picture class="flogin">
+            <h2>Login Responsivo</h2>
+            <source media="(max-width: 768px)" srcset="imagens/figma/responsivo-cel.jpg"><img
+                src="imagens/figma/responsivo.png" alt="port">
+        </picture>
+
+            <ul id="botoes-log">
+                <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto
+                </li></a>
+                <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li></a>
+            </ul>
+           
+            <p  id="p02">
+                Este código HTML e CSS cria uma página de login responsiva. A estrutura HTML contém elementos para
+                entrada
+                de e-mail, senha e botão de login, além de links para recuperação de senha. O CSS utiliza media queries
+                para
+                ajustar o layout da seção de login com base no tamanho da tela. Para telas entre 768px e 1200px.
+            </p>
+        </div>
+
+        <div class="rede-social" >
+        <picture class="fsocial">
+            <h2>Rede Social</h2>
+            <source media="(max-width: 768px)" srcset="imagens/figma/rede-social-cel.jpg"><img
+                src="imagens/figma/rede-social.png" alt="port">
+        </picture>
+
+
+
+            <ul id="botoes-soc">
+                <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir projeto
+                </li></a>
+                <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li></a>
+            </ul>
+
+   
+            <p id="p03">
+                Este código HTML e CSS cria uma página de rede social. A estrutura HTML contém seções para exibir um
+                telefone simulado com uma tela de navegação e ícones de redes sociais. O CSS define estilos para o
+                layout da
+                página, incluindo a posição do telefone e dos ícones das redes sociais. O fundo da página é uma imagem
+                de
+                madeira e os ícones têm efeitos de sombra e transição quando passados por cima.
+            </p>
+        </div>
+
+        <div class="cordel">
+        <picture class="fcordel">
+            <h2>Cordel Moderno</h2>
+            <source media="(max-width: 768px)" srcset="imagens/figma/paralax-cel.jpg"><img
+                src="imagens/figma/paralax.png" alt="port">
+        </picture>
+
+            <ul id="botoes-cord">
+                <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir
+                        projeto</a></li>
+                <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li><a>
+            </ul>
+
+            <p id="p04">
+                Este código HTML e CSS cria uma página de projeto de cordel moderno. A estrutura HTML contém seções para
+                diferentes partes do poema, incluindo texto e imagens. O CSS define estilos para o layout da página,
+                como as
+                fontes, cores de fundo e sombras. O cabeçalho contém o título do cordel e informações sobre o autor. As
+                seções são estilizadas para diferenciar entre o texto normal e as partes com imagens de fundo.
+            </p>
+        </div>
+
+        
+        <div class="android">
+        <picture class="fandroid">
+            <h2>Android</h2>
+            <source media="(max-width: 768px)" srcset="imagens/figma/iframe-cel.jpg"><img src="imagens/figma/iframe.png"alt="port">
+        </picture>
+ 
+            <ul id="botoes-and">
+                <li><a href="https://dev-miriambatista.github.io/portfolio-miriambatista/" target="_blank">Abrir
+                        projeto</a></li>
+                <li><a href="https://github.com/dev-miriambatista/portfolio-miriambatista">GitHub</li>
+            </ul><a>
+            <p  id="p05">
+                Este código HTML e CSS cria uma página sobre curiosidades de tecnologia. O HTML estrutura o conteúdo da
+                página com cabeçalho, navegação, conteúdo principal e rodapé. O CSS define os estilos visuais, como
+                cores,
+                fontes e layout da página. O cabeçalho apresenta o título do site e uma breve descrição. A navegação
+                permite
+                acessar diferentes seções do site. O conteúdo principal inclui informações sobre o mascote do Android,
+                com
+                imagens e vídeos incorporados. O rodapé exibe informações sobre o criador do site.
+            </p>
+        </div>
+</main>
+
+<script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
         }
     }
-    </script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            (itens.style.display = 'block')
+        }
+    }
+</script>
 
 </body>
 

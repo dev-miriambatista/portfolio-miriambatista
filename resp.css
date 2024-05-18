@@ -90,12 +90,13 @@
         -webkit-font-smoothing: antialiased;
         margin: 10%;
     }
-    
+
     .capa {
         display: grid;
-        grid-template-rows: 30vh 50vh 7vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 62vh 26vh 18vw;
         justify-items: center;
-        margin: 5vh;
+        margin: 0vh;
         row-gap: 0vh;
 
         grid-template-areas:
@@ -103,7 +104,7 @@
         "saudacao" 
         "contato";
     }
-    
+
     #perfil {
         box-shadow: 2px 2px 10px #40281F;
     }
