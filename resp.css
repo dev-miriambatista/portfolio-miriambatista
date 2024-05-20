@@ -1,24 +1,26 @@
-
 @media screen and (max-width: 768px) {
 
-    html, body {
+    html,
+    body {
         margin: 0px;
         padding: 0px;
         background-image: url(imagens/bg\ poa.svg);
-    
+
     }
-    main{
-        width: 50vw;
+
+    main {
+        width: 100vw;
         margin: auto;
-    
+
     }
+
     header {
         display: inline-grid;
         grid-template-columns: 50vw 50vw;
         grid-template-rows: 10vh;
         justify-content: space-between;
     }
-    
+
     header h1 {
         display: inline-grid;
         margin-left: 20px;
@@ -28,23 +30,23 @@
         margin-left: 5px;
         color: #ffffff;
     }
-    
+
     nav {
         display: inline-grid;
         position: relative;
         background-color: aquamarine;
-        
+
     }
-    
-    nav > ul {
-        display:grid;
+
+    nav>ul {
+        display: grid;
         width: 100vw;
         list-style-type: none;
         justify-items: center;
         align-content: center;
-    
+
     }
-    
+
     nav li {
         display: inline-grid;
         margin-right: 2%;
@@ -52,7 +54,7 @@
         align-items: center;
         border-radius: 5%;
     }
-    
+
     nav a {
         display: grid;
         width: 100vw;
@@ -64,16 +66,16 @@
         transition: transform 2s;
         background-color: aquamarine;
     }
-    
+
     nav a:hover {
-        background-color:var(--cor7);
+        background-color: var(--cor7);
         transition: transform 2s;
     }
-    
+
     i#burguer {
-            display: inline-grid; 
-        }
-    
+        display: inline-grid;
+    }
+
     .material-icons {
         font-family: 'Material Icons';
         font-weight: normal;
@@ -93,19 +95,20 @@
 
     .capa {
         display: grid;
-        grid-template-columns: 50%;
+        width: 100vw;
+        grid-template-columns: 100%;
         grid-template-rows: 62vh 15vh 18vw;
         justify-items: center;
         margin: 0vh;
         row-gap: 0vh;
         grid-template-areas:
-        "perfil"
-        "saudacao" 
-        "postit"
-        "contato";
+            "perfil"
+            "saudacao"
+            "postit"
+            "contato";
     }
 
-    .capa p{
+    .capa p {
         width: 60vw;
         line-height: 1.5;
     }
@@ -117,24 +120,25 @@
     .capa .postit img {
         transform: rotate(260deg);
     }
+
     .perfil {
         margin-top: -25%;
         width: 80vw;
         display: flex;
         flex-direction: column;
-       
+
         transform: rotate(90deg);
     }
 
-    #postit{
+    #postit {
         position: relative;
-        width: 80vw;
-        margin-top: -100%;
+        width: 60vw;
+        margin-top: -120%;
         display: flex;
         flex-direction: column;
     }
 
-    #saudacao{
+    #saudacao {
         grid-area: saudacao;
         margin-top: 125vh;
         width: 80vw;
@@ -144,21 +148,22 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
     .contato {
         display: flex;
+        position: relative;
         width: 100%;
         height: 7vh;
         grid-area: contato;
         gap: 1%;
-        margin-top:15vh ;
+        margin-top: -15vh;
         justify-content: space-evenly;
         background-color: black;
         align-items: center;
-     
-    
+
+
     }
-    
+
     section.contato>img {
         display: grid;
         grid-area: contato;
@@ -168,87 +173,224 @@
         background-color: black;
     }
 
-    .contato ul{
+    .contato ul {
         gap: 2%;
         justify-content: space-around;
     }
-    
+
     #projetos {
         font: bolder 4em "La Belle Aurore";
         width: 50vw;
-        text-align:center;
+        text-align: center;
         color: #1a1510;
-        margin-top:20%;
+        margin-top: 20%;
 
     }
 
-    .proj{
-        text-align:left;
+    .proj {
+        display: grid;
+        grid-template-columns: 90vw;
+        grid-auto-rows: auto;
+        text-align: left;
         width: 50vw;
         display: flex;
         flex-direction: column;
     }
 
-    .proj ul{
+    .proj ul {
         text-align: center;
     }
 
-    .proj h2{
-        text-align:center;
-}
-
-
-    #p01,#p02,#p03,#p04,#p05 {
-        display: flex;
-        flex-direction: column;
-    width: 52vw;
-    margin-left: 18%;
-    height: auto;
-    margin-bottom: 15%;
-    margin-top: -69vh;
-    text-align: justify;
-    font-size: 0.9em;
-    padding: 7%;
+    .proj h2 {
+        text-align: center;
     }
-    .fport,.flogin, .fsocial, .fcordel,.fandroid {
-        width: auto;        
-        border-style:hidden;
+
+
+    #p01 {
+        margin-left: 9%;
+    }
+
+    .fport,
+    .flogin,
+    .fsocial,
+    .fcordel,
+    .fandroid {
+        width: auto;
+        border-style: hidden;
         display: flex;
         flex-direction: column;
-        }
-    #portfolio,  #login, #rede-social, #cordel-moderno,#android{
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-rows: 31vh 79vh 0vh;
+        position: relative;
+        margin-left: 5vw;
+        grid-template-areas:
+            "fport"
+            "botoes-port"
+            "p01";
+
+    }
+
+    #login,
+    #rede-social,
+    #cordel-moderno,
+    #android {
         width: 60vw;
         display: flex;
         flex-direction: column;
-    } 
+    }
 
-    .botoes{
-        color: white;
-        text-align: center;
+    #p01 {
+        display: grid;
+        width: 62vw;
+        margin-top: -70vh;
+        margin-left: 10%;
+        margin-bottom: 21vh;
+    }
+
+    #p02 {
+        display: grid;
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        width: 33vw;
+        margin-top: 24vh;
+        margin-left: -65%;
+        margin-bottom: 15%;
+    }
+
+    #p03 {
+        display: grid;
+        position: absolute;
+        top: 122vh;
+        width: 33vw;
+        margin-top: -66vh;
+        margin-left: 5%;
+        margin-bottom: 15%;
+    }
+
+    #p04 {
+        display: grid;
+        position: absolute;
+        top: 124vh;
+        left: 2vw;
+        width: 33vw;
+        margin-top: -68vh;
+        margin-left: 1%;
+        margin-bottom: 15%
+    }
+
+    #p05 {
+        display: grid;
+        position: absolute;
+        top: 4vh;
+        left: 3vw;
+        width: 33vw;
+        margin-top: 52vh;
+        margin-bottom: 15%;
+    }
+
+    #botoes-port {
+        display: flex;
+        width: 55vw;
+        margin-top: 1%;
+        margin-bottom: 72vh;
+        justify-content: space-around;
+        margin-left: 70.5px;
+        background-color: #ffffff57;
+        font: normal bolder 1em "Handlee";
+        align-items: center;
+        justify-content: center;
+    }
+
+    #botoes-log {
+        display: flex;
+        width: 32.5vw;
+        font-size: 1.5em;
+        margin-bottom: 4vh;
+        justify-content: space-around;
+
+        margin-left: 0vw;
+        background-color: #ffffff57;
+        font: normal bolder 1em "Handlee";
+    }
+
+    #botoes-soc {
+        display: flex;
+        width: 33vw;
+        font-size: 1.5em;
+        margin-bottom: 4vh;
+        justify-content: space-around;
+        margin-left: 5.5vw;
+        background-color: #ffffff57;
+        font: normal bolder 1em "Handlee";
+
+    }
+
+    #botoes-cord {
+        display: flex;
+        width: 35vw;
+        font-size: 1.5em;
+        margin-bottom: 6vh;
+        margin-left: 5vw;
+        background-color: #ffffff57;
+        font: normal bolder 1em "Handlee";
+        justify-content: space-around;
+    }
+
+    #botoes-and {
+        display: flex;
+        width: 33.2vw;
+        font-size: 1.5em;
+        margin-bottom: 35vh;
+        justify-content: space-around;
+        margin-left: 4.9vw;
+        background-color: #ffffff57;
+        font: normal bolder 1em "Handlee";
+        margin-top: -3vh;
+    }
+
+    .proj li{
+        display: grid;
         text-decoration: none;
-      
+        list-style: none;
+        color: black;
+        margin: 1px;
+        width: 25vw;
+        padding: 2%;
+        border-radius: 2%;
+        box-shadow: 2px 2px 10px #ffffff;
+        background-color: #ff6e99;
+        text-align: center;
+        font: normal bolder 0.7em "Handlee";
+        align-items: center;
+    }
 
-   a{
-    width: 100%;
-    height: 100%;
+
+    a {
+        width: 100%;
+        height: 100%;
         color: crimson;
         background-color: fuchsia;
-        color:black;
+        color: black;
         font-size: 1em;
     }
 
-    a:hover{
+    a:hover {
         width: 100%;
         background-color: springgreen;
-            color:black;
-            font-size: 1em;
-        }
+        color: black;
+        font-size: 1em;
+    }
 
-    li{
+    li {
         display: grid;
-        color:black;
+        color: black;
         font-size: 1.2em;
         margin: 1%;
     }
-    }
+}
 }
