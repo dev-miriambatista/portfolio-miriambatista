@@ -182,7 +182,7 @@
 
     #projetos {
         font: bolder 4em "La Belle Aurore";
-        width: 50vw;
+        width: 100vw;
         text-align: center;
         color: #1a1510;
         margin-top: 20%;
@@ -211,6 +211,9 @@
     #p01 {
         margin-left: 9%;
     }
+    #p02 {
+        margin-left: 9%;
+    }
 
     .fport,
     .flogin,
@@ -235,7 +238,17 @@
 
     }
 
-    #login,
+    .login{
+            display: grid;
+            grid-template-rows: 31vh 79vh 0vh;
+            position: relative;
+            margin-left: 5vw;
+            grid-template-areas:
+                "flogin"
+                "botoes-log"
+                "p02";
+
+    }
     #rede-social,
     #cordel-moderno,
     #android {
@@ -254,13 +267,9 @@
 
     #p02 {
         display: grid;
-        position: absolute;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        width: 33vw;
+        width: 62vw;
         margin-top: 24vh;
-        margin-left: -65%;
+        margin-left: -19%;
         margin-bottom: 15%;
     }
 
@@ -310,14 +319,15 @@
 
     #botoes-log {
         display: flex;
-        width: 32.5vw;
-        font-size: 1.5em;
-        margin-bottom: 4vh;
+        width: 55vw;
+        margin-top: 1%;
+        margin-bottom: 72vh;
         justify-content: space-around;
-
-        margin-left: 0vw;
+        margin-left: 70.5px;
         background-color: #ffffff57;
         font: normal bolder 1em "Handlee";
+        align-items: center;
+        justify-content: center;
     }
 
     #botoes-soc {
@@ -394,5 +404,4 @@
         font-size: 1.2em;
         margin: 1%;
     }
-}
 }
