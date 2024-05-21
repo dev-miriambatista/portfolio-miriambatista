@@ -23,18 +23,18 @@
 
     header h1 {
         display: inline-grid;
-        margin-left: 20px;
+  
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 2em;
+        font-size: 1em;
         padding: 7px;
-        margin-left: 5px;
+
         color: #ffffff;
     }
 
     nav {
         display: inline-grid;
         position: relative;
-        background-color: aquamarine;
+        background-color: #f18ed4;
 
     }
 
@@ -42,17 +42,19 @@
         display: grid;
         width: 100vw;
         list-style-type: none;
-        justify-items: center;
-        align-content: center;
+        justify-items: right;
+        align-content: end;
 
     }
 
     nav li {
         display: inline-grid;
-        margin-right: 2%;
+
         justify-items: end;
         align-items: center;
-        border-radius: 5%;
+
+        font: bolder 1em "Nunito";
+        border: 1px solid white;
     }
 
     nav a {
@@ -62,7 +64,7 @@
         text-align: center;
         border: 2px solid rgba(248, 248, 255, 0);
         color: white;
-        font: bolder 1em "Nunito";
+        
         transition: transform 2s;
         background-color: aquamarine;
     }
