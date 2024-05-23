@@ -171,14 +171,12 @@
 
     .proj {
         display: grid;
-        grid-template-columns: 90vw;
+        grid-template-columns: 80vw;
         grid-template-rows: repeat(5, 93vh);
-        width: 65vw;
+        width: 71vw;
         justify-content: center;
         align-items: center;
-        justify-items: center;
-        display: flex;
-        flex-direction: column;
+        justify-items: center;    
     }
 
     .proj h2 {
