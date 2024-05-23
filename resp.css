@@ -199,7 +199,7 @@
         padding: 7%;
     }
 
-    .portfolio{
+    tx01{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -208,7 +208,7 @@
         margin-bottom: 5vh;
     }
     
-    .login{
+    tx02{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -218,7 +218,7 @@
         
     }
     
-    .rede-social{
+    tx03{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -228,7 +228,7 @@
         
     }
     
-    .cordel{
+    tx04{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -237,7 +237,7 @@
         margin-bottom: 5vh;
     }
     
-    .android {
+    tx05 {
         display: flex;
         flex-direction: column;
         align-items: center;

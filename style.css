@@ -17,7 +17,7 @@
     --cor6: #c2565f;
     --cor7: #724347;
 }
-
+@media screen and (min-width: 768px) {
 * {
     margin: 0px;
     padding: 0px;
@@ -61,7 +61,7 @@ header h1 {
     font-size: 2em;
     padding: 7px;
     margin-left: 5px;
-    color: #ffffff;
+    color: #000000;
 }
 
 nav {
@@ -194,7 +194,7 @@ i#burguer {
     margin-top:10vh ;
 }
 
-@media screen and (min-width: 768px) {
+
 
     .proj {
         display: grid;
