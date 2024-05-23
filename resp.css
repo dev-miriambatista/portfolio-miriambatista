@@ -9,7 +9,7 @@
     }
 
     main {
-        width: 75vw;
+        width: 100vw;
         margin: auto;
 
     }
@@ -170,7 +170,7 @@
 
     .proj {
         display: grid;
-        grid-template-columns: 50vw;
+        grid-template-columns: 40vw;
         grid-template-rows: repeat(5,auto);
         justify-content: center;
         align-items: center;
@@ -193,42 +193,52 @@
         display: grid;
         width: 60vw;
         margin-left: 3%;
-
         text-align: justify;
         font-size: 0.9em;
         padding: 7%;
     }
 
-    .portfolio,.login,.rede-social,.cordel,.android {
+    .portfolio{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -47vh;
+        margin-top: -55vh;
     }
-
-    .portfolio{
-        margin-bottom: 15vh;  
-    }
-
+    
     .login{
-        margin-bottom: 15vh;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -65vh;
+        
     }
     
     .rede-social{
-        margin-bottom: 15vh;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -72vh;
+        
     }
     
     .cordel{
-        margin-bottom: 15vh;  
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -58vh;
     }
     
     .android {
-        margin-bottom: 15vh;  
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -52vh;
     }
-
 
     .botoes {
         color: white;
