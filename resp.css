@@ -110,12 +110,12 @@
     }
 
     .capa p {
-        width: 40vw;
+        width: 50vw;
         line-height: 1.5;
         left: 7vw;
         font-size: 1.2em;
-        margin-top:-32vh;
-        margin-left: 12vw;
+        margin-top:-34vh;
+        margin-left: 8vw;
     }
 
     .capa .perfil img {
