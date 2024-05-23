@@ -17,7 +17,7 @@
     --cor6: #c2565f;
     --cor7: #724347;
 }
-@media screen and (min-width: 768px) {
+
 * {
     margin: 0px;
     padding: 0px;
@@ -193,7 +193,7 @@ i#burguer {
     color: #1a1510;
     margin-top:10vh ;
 }
-
+@media screen and (min-width: 768px) {
 
 
     .proj {
@@ -260,11 +260,6 @@ i#burguer {
         "p05";
 
 }
-
-
-
- 
-    
     .fport {
         display:grid;
         grid-area: fport;
