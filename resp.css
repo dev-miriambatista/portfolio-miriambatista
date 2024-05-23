@@ -76,6 +76,7 @@
 
     i#burguer {
         display: inline-grid;
+        justify-items: end;
     }
 
     .material-icons {
