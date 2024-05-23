@@ -179,6 +179,7 @@
 
     .proj h2 {
         text-align: center;
+        margin-top: 8vh;
     }
 
     .proj ul {
@@ -203,7 +204,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -55vh;
+        margin-top: -50vh;
+        margin-bottom: 5vh;
     }
     
     .login{
@@ -211,7 +213,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -65vh;
+        margin-top: -60vh;
+        margin-bottom: 5vh;
         
     }
     
@@ -220,7 +223,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -72vh;
+        margin-top: -66vh;
+        margin-bottom: 5vh;
         
     }
     
@@ -229,7 +233,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -58vh;
+        margin-top: -53vh;
+        margin-bottom: 5vh;
     }
     
     .android {
@@ -237,7 +242,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -52vh;
+        margin-top: -51vh;
+
     }
 
     .botoes {
