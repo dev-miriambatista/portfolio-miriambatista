@@ -194,11 +194,10 @@
         display: grid;
         width: 50vw;
         margin-left: 3%;
-        height: auto;
         margin-top: -55vh;
         text-align: justify;
         font-size: 0.9em;
-        padding: 7%
+        padding: 7%;
     }
 
     .portfolio,.login,.rede-social,.cordel,.android {
@@ -207,28 +206,27 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 65vh;
     }
 
     .portfolio{
-        margin-bottom: 30vh;  
+        margin-bottom: 15vh;  
     }
 
     .login{
-        margin-bottom: 30vh;  
+        margin-bottom: 15vh;  
     }
     
     .rede-social{
-        margin-bottom: 30vh;  
+        margin-bottom: 15vh;  
     }
     
     .cordel{
-        margin-bottom: 30vh;  
+        margin-bottom: 15vh;  
 
     }
     
     .android {
-        margin-bottom: 30vh;  
+        margin-bottom: 15vh;  
 
     }
 
