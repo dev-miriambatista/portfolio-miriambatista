@@ -205,10 +205,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -57vh;
+        margin-top: -55vh;
         width: 93vw;
         height: 52vh;
-        background-color: beige;
 
     }
     
@@ -220,7 +219,7 @@
         margin-top: -57vh;
         width: 93vw;
         height: 52vh;
-        background-color: beige;        
+ 
     }
     
     tx03{
@@ -231,7 +230,7 @@
         margin-top: -60vh;
         width: 93vw;
         height: 55vh;
-        background-color: beige;
+
     }
     
     tx04{
@@ -242,7 +241,7 @@
         margin-top: -54vh;
         width: 93vw;
         height: 55vh;
-        background-color: beige;
+
     }
     
     tx05 {
@@ -253,7 +252,6 @@
         margin-top: -53vh;
         width: 93vw;
         height: 55vh;
-        background-color: beige;
     }
 
     .botoes {
