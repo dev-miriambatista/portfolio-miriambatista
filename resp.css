@@ -216,7 +216,7 @@
         margin-left: 3%;
         text-align: justify;
         font-size: 0.9em;
-        padding: 7%;
+        padding: 4%;
     }
 
     tx01 {
@@ -276,6 +276,7 @@
 
     #botoes-port{        
         width: 55vw;
+        margin-top: 3vh;
     }
 
     #botoes-log{
