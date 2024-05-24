@@ -52,7 +52,7 @@
     nav li {
         display: inline-grid;
         margin-right: 2%;
-        justify-items: end;
+        justify-items: center;
         align-items: center;
         border-radius: 5%;
     }
