@@ -275,11 +275,25 @@
     }
 
     #botoes-port{        
-        width: 53vw;
+        width: 55vw;
     }
 
-    .botoes-log{
-        width: 62vw;
+    #botoes-log{
+        width: 52vw;
+    }
+
+    #botoes-soc{
+        width: 52vw;
+    }
+
+    #botoes-cord{
+        width: 52vw;
+     
+    }
+
+    #botoes-and{
+        width: 52vw;
+        margin-left: 2vw;
     }
 
 
