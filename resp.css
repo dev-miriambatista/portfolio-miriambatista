@@ -218,7 +218,6 @@
         font-size: 0.9em;
         padding: 2%;
     }
-
     tx01 {
         display: flex;
         flex-direction: column;
@@ -227,9 +226,7 @@
         margin-top: -61vh;
         width: 93vw;
         height: 52vh;
-
     }
-
     tx02 {
         display: flex;
         flex-direction: column;
@@ -238,9 +235,7 @@
         margin-top: -54vh;
         width: 93vw;
         height: 52vh;
-
     }
-
     tx03 {
         display: flex;
         flex-direction: column;
@@ -249,9 +244,7 @@
         margin-top: -61vh;
         width: 93vw;
         height: 55vh;
-
     }
-
     tx04 {
         display: flex;
         flex-direction: column;
@@ -260,10 +253,7 @@
         margin-top: -52vh;
         width: 93vw;
         height: 55vh;
-
-
     }
-
     tx05 {
         display: flex;
         flex-direction: column;
@@ -281,28 +271,31 @@
 
     #botoes-log{
         width: 52vw;
+        margin-top: 3vh;
     }
 
     #botoes-soc{
         width: 52vw;
+        margin-top: 3vh;
     }
 
     #botoes-cord{
         width: 52vw;
+        margin-top: 3vh;
      
     }
 
     #botoes-and{
         width: 52vw;
         margin-left: 2vw;
+        margin-top: 3vh;
     }
 
 
         .proj  a{
             text-decoration: none;
-            color: black;
-            background-color: violet;
-            border-radius: 21%;
+            color: #ffffff;
+            background-color: black;
             padding: 4%;
         
     }
@@ -317,7 +310,7 @@
             color: black;
             font-size: 1.2em;
             margin: 1%;
-            padding: 4px;
+            padding: 2px;
         
 
         }
