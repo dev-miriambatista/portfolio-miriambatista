@@ -100,6 +100,7 @@
         display: grid;
         grid-template-columns: 50%;
         grid-template-rows: 62vh 15vh 18vw;
+        margin-left: 12vw;
         margin: 0vh;
         row-gap: 0vh;
         grid-template-areas:
@@ -115,7 +116,7 @@
         line-height: 1.5;
         left: 7vw;
         font-size: 1.2em;
-        margin-top:-35.6vh;
+        margin-top: -35.6vh;
         margin-left: 8vw;
     }
 
@@ -132,7 +133,7 @@
         transform: rotate(90deg);
     }
 
-    #postit img{
+    #postit img {
         position: relative;
         width: 138%;
         margin-top: -111%;
@@ -141,8 +142,8 @@
         margin-left: 10vw;
     }
 
-    .contato{
-        margin-left: -13vw;
+    .contato {
+        margin-left: 1vw;
         margin-top: -25vw;
     }
 
@@ -151,7 +152,7 @@
 
     }
 
-    .contato li{
+    .contato li {
         display: grid;
         color: black;
         font-size: 1.2em;
@@ -162,7 +163,7 @@
     #projetos {
         display: inline-grid;
         font: bolder 4em "La Belle Aurore";
-        width: 70vw;
+        width: 100vw;
         text-align: center;
         color: #1a1510;
         margin-top: 7%;
@@ -171,9 +172,9 @@
     .proj {
         display: grid;
         grid-template-columns: 40vw;
-        grid-template-rows: repeat(5,auto);
+        grid-template-rows: repeat(5, auto);
         justify-content: center;
-        justify-items: center;    
+        justify-items: center;
     }
 
     h2 {
@@ -184,21 +185,24 @@
 
     .proj ul {
         text-align: center;
+        text-decoration: none;
+        list-style: none;
+        color: black;
     }
 
-    .login{
+    .login {
         margin: -1vh;
     }
 
-    .rede-social{
-        margin: 6vh;
+    .rede-social {
+        margin: 5vh;
     }
 
-    .cordel{
+    .cordel {
         margin: 0vh;
     }
 
-    .android{
+    .android {
         margin: 0vh;
     }
 
@@ -215,7 +219,7 @@
         padding: 7%;
     }
 
-    tx01{
+    tx01 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -225,8 +229,8 @@
         height: 52vh;
 
     }
-    
-    tx02{
+
+    tx02 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -234,10 +238,10 @@
         margin-top: -55vh;
         width: 93vw;
         height: 52vh;
- 
+
     }
-    
-    tx03{
+
+    tx03 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -247,8 +251,8 @@
         height: 55vh;
 
     }
-    
-    tx04{
+
+    tx04 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -256,10 +260,10 @@
         margin-top: -54vh;
         width: 93vw;
         height: 55vh;
-   
+
 
     }
-    
+
     tx05 {
         display: flex;
         flex-direction: column;
@@ -273,19 +277,17 @@
     .botoes {
         color: white;
         text-align: center;
-        text-decoration: none;
-
 
         a {
             color: crimson;
             background-color: fuchsia;
             color: black;
             font-size: 1em;
+
         }
 
         a:hover {
             width: 100%;
-            background-color: springgreen;
             color: black;
             font-size: 1em;
         }
@@ -295,6 +297,7 @@
             color: black;
             font-size: 1.2em;
             margin: 1%;
+
         }
     }
 }
