@@ -298,15 +298,12 @@
 
 
         ul li a{
-        text-decoration: none;
-        color: black;
-        background-color: violet;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-     
-
+            text-decoration: none;
+            color: black;
+            background-color: violet;
+            border-radius: 21%;
+            padding: 4%;
+        
     }
         a:hover {
             width: 100%;
@@ -319,7 +316,8 @@
             color: black;
             font-size: 1.2em;
             margin: 1%;
-            background-color: violet;
+            padding: 4px;
+        
 
         }
     }
