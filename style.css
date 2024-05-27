@@ -158,8 +158,8 @@ i#burguer {
 }
 
 .perfil {
-    margin-top: -23%;
-    margin-left: -36vw;
+    margin-top: -4%;
+    margin-left: 9vw;
     display: flex;
     flex-direction: column;
     transform: rotate(-8deg);
@@ -178,11 +178,11 @@ i#burguer {
 
 #postit img {
     position: relative;
-    width: 56%;
-    margin-top: -84%;
+    width: 99%;
+    margin-top: -1%;
     display: flex;
     flex-direction: column;
-    margin-left: 50vw;
+    margin-left: 0vw;
 }
 
 #saudacao {
@@ -191,14 +191,14 @@ i#burguer {
     width: 61vw;
     text-align: center;
     color: #1a1510;
-    margin-top: -18vh;
+    margin-top: -3vh;
 }
 .contato {
     display:grid;
     grid-area: contato;
     justify-items: center;
     align-items: center;
-    margin-top: -23vh;
+    margin-top: 0vh;
 }
 
 .contato ul {
