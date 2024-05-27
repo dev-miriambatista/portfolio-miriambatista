@@ -49,8 +49,10 @@ header {
     display: inline-grid;
     grid-template-columns: 28vw 50vw;
     grid-template-rows: 10vh;
-    box-shadow: 2px 2px 10px #c2565f;
+    box-shadow: 2px 2px 20px #c2565f;
     justify-content: space-between;
+    justify-items: center;
+    align-items: center;
 }
 
 header h1 {
@@ -139,11 +141,28 @@ i#burguer {
         "fport saudacao"
         "contato  .  "
 }
+#cora{
+    position: relative;
+    margin-top: 3vh;
+}
+#new{
+    margin-top: -1vh;
+}
 
+#star-{
+    margin-top: -40vh;
+}
 
+#star{
+    margin-top: -40vh;
+}
 
-#amarelo{
-    background-color: yellow;
+.perfil {
+    margin-top: -23%;
+    margin-left: -36vw;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-8deg);
 }
 
 #pink{
@@ -157,19 +176,29 @@ i#burguer {
     margin-top: -56vh;
 }
 
-#saudacao {
-    display:grid;
+#postit img {
     position: relative;
- 
-    width: 50vw;
-    text-align:center;
+    width: 56%;
+    margin-top: -84%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50vw;
+}
+
+#saudacao {
+    display: grid;
+    position: relative;
+    width: 61vw;
+    text-align: center;
     color: #1a1510;
+    margin-top: -18vh;
 }
 .contato {
     display:grid;
     grid-area: contato;
     justify-items: center;
     align-items: center;
+    margin-top: -23vh;
 }
 
 .contato ul {
@@ -203,13 +232,16 @@ i#burguer {
     }
 
     .proj h2{
+        position:relative;
         display: inline-grid;
+        color: #000000;
     }
 
 .portfolio{
     display: grid;
-    grid-template-rows: 33vh 29vh 55vh;
+    grid-template-rows: 41vh 29vh 55vh;
     position: relative;
+    justify-items: center;
     grid-template-areas:
         "fport"
         "botoes-port"
@@ -218,7 +250,7 @@ i#burguer {
 
 .login{
     display: grid;
-    grid-template-rows: 51.5vh 11vh 55vh;
+    grid-template-rows: 42.5vh 11vh 55vh;
     position: relative;
     grid-template-areas:
         "flogin"
@@ -227,19 +259,20 @@ i#burguer {
     justify-items: center;
 }
 
-.rede-social{
+.rede-social {
     display: grid;
-    grid-template-rows: 51vh 11vh 55vh;
+    grid-template-rows: 41vh 1vh 35vh;
     position: relative;
+    justify-items: center;
     grid-template-areas:
         "fsocial"
         "botoes-soc"
-        "p03";
+        "p03"
 }
 
 .cordel{
     display:grid;
-    grid-template-rows: 51vh 13vh 55vh;
+    grid-template-rows: 51vh 13vh 35vh;
     position: relative;
     grid-template-areas:
     "fcordel"
@@ -249,9 +282,7 @@ i#burguer {
 
 .android{
     display: grid;
-    grid-template-rows: 54vh 39vh 27vh;
-    margin-left: -50vw;
-    margin-top: -15vh;
+    grid-template-rows: 20vh 39vh 35vh;
     position: relative;
     grid-template-areas:
         "fandroid"
@@ -268,21 +299,28 @@ i#burguer {
     .flogin {
         display:grid;
         grid-area: flogin;
+
     }
 
     .fsocial{
         display:grid;
         grid-area: fsocial;
+        margin-top: -4vh;
     }
     
     .fcordel {
         display:grid;
         grid-area: fcordel;
+        margin-top: -4vh;
+        justify-items: center;
     }
     
     .fandroid {
-        display:grid;
+        display: grid;
         grid-area: fandroid;
+        margin-top: -6vh;
+        justify-items: center;
+
        
 
     }
@@ -290,12 +328,12 @@ i#burguer {
     #botoes-port{
         display: flex;
         width: 33vw;
-        margin-top: 20%;
+        margin-top: 30%;
         margin-bottom: 4vh;
-        justify-content: space-around;
-        margin-left: 70.5px;
+        margin-left: 3.5px;
         background-color: #ffffff57;
         font: normal bolder 1em "Handlee";
+        justify-content: space-around;
     } 
 
     #botoes-log{
@@ -304,21 +342,22 @@ i#burguer {
         font-size: 1.5em;
         margin-bottom: 4vh;
         justify-content: space-around;
- 
         margin-left: 0vw;
         background-color: #ffffff57;
         font: normal bolder 1em "Handlee";
+        margin-top: 20vh
     }   
 
     #botoes-soc{
         display: flex;
-        width: 33vw;
+        width: 33.5vw;
         font-size: 1.5em;
-        margin-bottom: 4vh;
+        margin-bottom: 0vh;
         justify-content: space-around;
-        margin-left: 5.5vw;
+        margin-left: 0.5vw;
         background-color: #ffffff57;
         font: normal bolder 1em "Handlee";
+        margin-top: 15vh;
 
     } 
 
@@ -327,10 +366,11 @@ i#burguer {
     width: 35vw;
     font-size: 1.5em;
     margin-bottom: 6vh;
-    margin-left: 5vw;
+    margin-left: 8vw;
     background-color: #ffffff57;
     font: normal bolder 1em "Handlee";
     justify-content: space-around;
+    margin-top: 5vh;
 }
 
 #botoes-and{
@@ -339,10 +379,10 @@ i#burguer {
     font-size: 1.5em;
     margin-bottom: 35vh;
     justify-content: space-around;
-    margin-left: 4.9vw;
+    margin-left: 8.9vw;
     background-color: #ffffff57;
     font: normal bolder 1em "Handlee";
-    margin-top: -3vh;
+    margin-top: 35vh;
 }
 
 
@@ -350,24 +390,31 @@ i#burguer {
     .proj li{
         display: grid;
         list-style:none;
-        color: black;
+        color: #ffffff;
         margin: 1px;
         width:10vw;
         padding: 1%;
         border-radius: 2%;
         box-shadow: 2px 2px 10px #ffffff;
-      background-color: #ff6e99;
+      background-color: #000000;
       text-align: center;
       font: normal bolder 1em "Handlee";
     }
 
     .proj a{
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
+        background-color: black;
+        padding: 2%;
+        transition: transform .5s;
     }
 
     .proj a:hover{
-        color: #000000;
+        color: #ffffff;
+        font-size: 1em;
+        padding: 4%;
+        background-color:#ff039e ;
+        transform: scale(1.1)
     }
 
     .proj p{
@@ -380,20 +427,17 @@ i#burguer {
 
 #p01{
     display: grid;
-    width: 33vw;
-    margin-top: -8vh;
-    margin-left: 5%;
+    width: 33.5vw;
+    margin-top: -7vh;
+    margin-left: -7%;
     margin-bottom: 21vh;
     }
 #p02{
     display: grid;
     position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
     width: 33vw;
-    margin-top: 24vh;
-    margin-left: -65%;
+    margin-top: -9vh;
+    margin-left: -7%;
     margin-bottom: 15%;
 }
 
@@ -401,11 +445,9 @@ i#burguer {
     display: grid;
     position: absolute;
     top: 122vh;
-    /* left: 50vw; */
-    /* transform: translate(-50%, -50%); */
     width: 33vw;
     margin-top: -66vh;
-    margin-left: 5%;
+    margin-left: -6%;
     margin-bottom: 15%;
 }
 
@@ -415,18 +457,18 @@ i#burguer {
     top: 124vh;
     left: 2vw;
     width: 33vw;
-    margin-top: -68vh;
-    margin-left: 1%;
-    margin-bottom: 15%
+    margin-top: -69vh;
+    margin-left: 7%;
+    margin-bottom: 15%;
 }
 
 #p05 {
     display: grid;
     position: absolute;
     top: 4vh;
-    left: 3vw;
+    left: 5vw;
     width: 33vw;
-    margin-top: 52vh;
+    margin-top: 50vh;
     margin-bottom: 15%;
     }
 }
