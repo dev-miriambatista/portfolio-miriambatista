@@ -309,14 +309,14 @@
             color: #ffffff;
             font-size: 1em;
             padding: 4%;
-            background-color: ;
+            background-color:silver ;
         }
 
         li {
             display: grid;
             color: black;
             font-size: 1em;
-            margin: 1px;
+            margin: 0.5px;
             padding: 2px;
         
 
