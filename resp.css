@@ -218,6 +218,7 @@
         text-align: justify;
         font-size: 0.9em;
         padding: 2%;
+       
     }
     tx01 {
         display: flex;
@@ -227,6 +228,7 @@
         margin-top: -54vh;
         width: 93vw;
         height: 52vh;
+        line-height: 1.1;
     }
     tx02 {
         display: flex;
@@ -301,9 +303,10 @@
         
     }
         a:hover {
-            width: 100%;
-            color: black;
+            color: #ffffff;
             font-size: 1em;
+            padding: 4%;
+            background-color: ;
         }
 
         li {
