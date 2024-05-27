@@ -247,6 +247,7 @@
         margin-top: -63vh;
         width: 93vw;
         height: 55vh;
+        line-height: 1.2;
     }
     tx04 {
         display: flex;
@@ -256,6 +257,7 @@
         margin-top: -56vh;
         width: 93vw;
         height: 55vh;
+        line-height: 1.2;
     }
     tx05 {
         display: flex;
@@ -265,6 +267,7 @@
         margin-top: -56vh;
         width: 93vw;
         height: 55vh;
+        line-height: 1.2;
     }
 
     #botoes-port{        
