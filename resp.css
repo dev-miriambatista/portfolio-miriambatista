@@ -63,7 +63,7 @@
         width: 100vw;
         text-decoration: none;
         text-align: center;
-        border: 2px solid rgba(248, 248, 255, 0);
+        border: 2px solid #f8f8ff00;
         color: white;
         font: bolder 1em "Nunito";
         transition: transform 2s;
@@ -297,7 +297,7 @@
             text-decoration: none;
             color: #ffffff;
             background-color: black;
-            padding: 4%;
+            padding: 2%;
         
     }
         a:hover {
@@ -310,7 +310,7 @@
             display: grid;
             color: black;
             font-size: 1em;
-            margin: 1%;
+            margin: 1px;
             padding: 2px;
         
 
