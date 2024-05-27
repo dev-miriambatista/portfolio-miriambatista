@@ -303,13 +303,15 @@
             color: #ffffff;
             background-color: black;
             padding: 2%;
+            transition: transform .5s;
         
     }
         a:hover {
             color: #ffffff;
             font-size: 1em;
             padding: 4%;
-            background-color:silver ;
+            background-color:#ff039e ;
+            transform: scale(1.1)
         }
 
         li {
