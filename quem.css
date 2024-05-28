@@ -84,6 +84,22 @@ nav a:hover {
     background-color: rgb(204, 241, 67);
     padding:5%;
     color: #ffffff;
-
 }
 
+#note{
+    width: 50%;
+}
+
+p{
+  
+}
+
+#texto{
+    width: 38vw;
+    text-align: justify;
+    margin: 40px;
+    line-height: 1.5;
+    margin-top: -91vh;
+    margin-left: 6vw;
+    font:normal larger 1em "Encode Sans SC";
+}

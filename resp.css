@@ -42,7 +42,8 @@
     }
 
     nav>ul {
-        display: inline-grid;
+        display: flex;
+        justify-content: right;
         position: relative;
         margin: 1px;;
         list-style-type: none;
