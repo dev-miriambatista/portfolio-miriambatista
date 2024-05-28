@@ -43,6 +43,7 @@
 
     nav>ul {
         display: inline-grid;
+        position: relative;
         margin: 1px;;
         list-style-type: none;
         justify-items: center;
@@ -52,6 +53,7 @@
 
     nav li {
         display: inline-grid;
+        position: relative;
         height: 5vh;
         margin: 1px;
         background-color: chartreuse;
@@ -59,6 +61,7 @@
 
     header nav a {
         display: grid;
+        position: relative;
         margin:1px;
         width: 20vw;
         text-decoration: none;
@@ -77,6 +80,7 @@
 
     i#burguer {
         display: inline-grid;
+        position: relative;
         justify-items: end;
         
     }
@@ -118,7 +122,7 @@
         line-height: 1.5;
         left: 7vw;
         font-size: 1.2em;
-        margin-top: -35.6vh;
+        margin-top: -31.6vh;
         margin-left: 14vw;
     }
 
