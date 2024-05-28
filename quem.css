@@ -1,0 +1,89 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(imagens/figma/bg.png);
+
+}
+
+main {
+    display: grid;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+
+
+}
+
+header {
+    display: inline-grid;
+    grid-template-columns: 28vw 50vw;
+    grid-template-rows: 10vh;
+    box-shadow: 2px 2px 20px #c2565f;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+header h1 {
+    display: inline-grid;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 7px;
+    margin-left: 5px;
+    color: #000000;
+}
+
+nav {
+    display: inline-grid;
+    position: relative;
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+    justify-items: center;
+    align-content: center;
+
+}
+
+nav li {
+    display: grid;
+    margin-right: 2%;
+    justify-items: end;
+    align-items: center;
+    border-radius: 5%;
+}
+
+nav a {
+    display: grid;
+    width: 11vw;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font: bolder 1em "Nunito";
+    padding: 3%;
+    transition: transform .5s;
+    background-color: #ff597d;
+}
+
+nav a:hover {
+    background-color: var(--cor7);
+    transition: transform 3s;
+    background-color: rgb(204, 241, 67);
+    padding:5%;
+    color: #ffffff;
+
+}
+

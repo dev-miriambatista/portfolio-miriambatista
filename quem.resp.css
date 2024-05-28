@@ -1,0 +1,103 @@
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(imagens/bg\ poa.svg);
+
+    }
+
+    main {
+        width: 100vw;
+        margin: auto;
+
+    }
+
+    header {
+        display: inline-grid;
+        grid-template-columns: 64vw 50vw;
+        grid-template-rows: 10vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        display: inline-grid;
+        margin-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        padding: 7px;
+        margin-left: 5px;
+        color: #000000;
+    }
+
+    nav {
+        display: inline-grid;
+        position: relative;
+        width: 50vw;
+        margin-left: 133vw;
+        margin-top: -3vh;
+
+    }
+
+    nav>ul {
+        display: inline-grid;
+        position: relative;
+        margin: 1px;;
+        list-style-type: none;
+        justify-items: center;
+        align-content: end;
+
+    }
+
+    nav li {
+        display: inline-grid;
+        position: relative;
+        height: 5vh;
+        margin: 1px;
+    }
+
+    header nav a {
+        display: grid;
+        position: relative;
+        margin:1px;
+        width: 25vw;
+        text-decoration: none;
+        text-align: center;
+        border: 2px solid #ffffff00;
+        color: white;
+        font: bolder 1em "Nunito";
+        transition: transform 2s;
+
+    }
+
+    header nav a:hover {
+        background-color: var(--cor7);
+        transition: transform 2s;
+    }
+
+    i#burguer {
+        display: inline-grid;
+        position: relative;
+        justify-items: end;
+        
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 29px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        margin: 10%;
+    }
+}
