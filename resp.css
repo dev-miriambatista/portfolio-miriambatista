@@ -145,6 +145,7 @@
     }
 
     .contato {
+        position: relative;
         margin-left: -7vw;
         margin-top: -25vw;
     }
